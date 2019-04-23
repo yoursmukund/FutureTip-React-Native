@@ -3,6 +3,7 @@ import { createStackNavigator, createAppContainer } from "react-navigation";
 import { StyleSheet, View, StatusBar, Dimensions, Text, TouchableOpacity, Button } from 'react-native';
 import MainScreen from './src/screens/main/main';
 import AuthScreen from './src/screens/auth/auth';
+import ReadingScreen from './src/screens/reading/reading';
 
 // import { createStore } from 'redux';
 // import { Provider } from 'react-redux';
@@ -13,7 +14,8 @@ import AuthScreen from './src/screens/auth/auth';
 const AppNavigator = createStackNavigator(
   {
     Home: AuthScreen,
-    MainScreen: MainScreen
+    MainScreen: MainScreen,
+    ReadingScreen: ReadingScreen
   },
   {
     initialRouteName: "Home"

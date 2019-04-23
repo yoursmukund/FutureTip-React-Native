@@ -5,9 +5,9 @@ import { StyleSheet, View, StatusBar, Dimensions, Text, TouchableOpacity, Button
 
 export default class MainScreen extends Component {
   openReadingView(key) {
-    if(key === 'health'){
-      alert('health');
-    }
+      this.props.navigation.push('ReadingScreen', {
+        readingName: key
+      });
   }
   render() {
     return (
@@ -15,22 +15,22 @@ export default class MainScreen extends Component {
         <View style={styles.wrapper}>
           {/* <StatusBar barStyle = "light-content" hidden = {false} translucent = {true} style={styles.statusBar}/> */}
           <View style={styles.container}>
-          <TouchableOpacity onPress={() => {this.openReadingView('health')}}>
+          <TouchableOpacity onPress={() => {this.openReadingView('Health')}}>
             <View style={styles.readingButton}>
               <Text style={styles.ReadingName}>Health</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => {this.openReadingView('family')}}>
+          <TouchableOpacity onPress={() => {this.openReadingView('Family')}}>
             <View style={styles.readingButton}>
               <Text style={styles.ReadingName}>Family</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => {this.openReadingView('career')}}>
+          <TouchableOpacity onPress={() => {this.openReadingView('Career')}}>
             <View style={styles.readingButton}>
               <Text style={styles.ReadingName}>Career</Text> 
             </View>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => {this.openReadingView('love')}}>
+          <TouchableOpacity onPress={() => {this.openReadingView('Love')}}>
             <View style={styles.readingButton}>
               <Text style={styles.ReadingName}>Love</Text>
             </View>
