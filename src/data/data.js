@@ -1,6 +1,6 @@
 export default data = {
-    ace:{
-        sword:{
+    one: {
+        swords:{
             career: {
                 karma: 'Be open minded and expectant of new things starting up around you. Welcome new challenges and overcome them with confidence. There is nothing to fear if we take everything as an experience.',
                 destiny: 'Inception of a challenge. Good or bad surprises on the way'
@@ -19,7 +19,7 @@ export default data = {
             }
         },
 
-        wand: {
+        wands: {
             career: {
                 karma: 'Your destiny and desire want you to find something you are passionate about. The inclination is there, the atmosphere is there, the karma is upto you. So go ahead and find that passion and set plans into motion.',
                 destiny: 'Inception of a passion, new journey'
@@ -57,7 +57,7 @@ export default data = {
             }
         },
 
-        pentacles: {
+        pents: {
             career: {
                 karma: 'The universe allows improvements in all aspects of your existence. Take the opportunity and open your eyes to fruitful ventures and don not shy away from taking risk.',
                 destiny: 'New health, luck and prosperity, solid gains.'
@@ -77,7 +77,7 @@ export default data = {
         }
     },
     two:{
-        sword:{
+        swords:{
             career: {
                 karma: 'The surroundings are not very favorable of conclusions and incline more towards opposing ideas and incompletion of targets. Be prepared for delays and keep your eyes open to actions or decisions that may not turn out to be in your favor',
                 destiny: 'Duality or warring ideas'
@@ -96,7 +96,7 @@ export default data = {
             }
         },
 
-        wand: {
+        wands: {
             career: {
                 karma: 'Both the outer world and your internal world are showing signs of lack of resolve and contentment. Time to leave some decisions behind for later and persue the ones on priority. Know that Rome was not built in a day. In order for you to move forward, you will have to let go of some conflict even if they are not resolved.',
                 destiny: 'Struggle of lesser potential, choice between personal world and the beyond'
@@ -134,7 +134,7 @@ export default data = {
             }
         },
 
-        pentacles: {
+        pents: {
             career: {
                 karma: 'In these turbulent times, be patient and stoic. Divide the work to conquor it.',
                 destiny: 'Juggling finances, health, a very physical life'
@@ -154,7 +154,7 @@ export default data = {
         }
     },
     three:{
-        sword:{
+        swords:{
             career: {
                 karma: 'Adverse situations are clouding in. This is the time to be more positive. It is the time to show the outside world your resilience. Do not be bogged down by the negativity.',
                 destiny: 'Heartbreak, disappointment with closely held posessions'
@@ -173,7 +173,7 @@ export default data = {
             }
         },
 
-        wand: {
+        wands: {
             career: {
                 karma: 'Your decisions matter a lot. Your choices matter a lot. Do not go blindly into areas that concern you. Look at things from more angles instead of turning a blind eye',
                 destiny: 'Journey reaching a point where there is no turning back.'
@@ -211,7 +211,7 @@ export default data = {
             }
         },
 
-        pentacles: {
+        pents: {
             career: {
                 karma: 'Grab opportunities, see your current role with different perspectives and seek new ideas. Where there is will, money will follow',
                 destiny: 'Possibility of rewards, new beginnings in action for career, physical world'
@@ -231,7 +231,7 @@ export default data = {
         }
     },
     four:{
-        sword:{
+        swords:{
             career: {
                 karma: 'Be cautious of procrastination and wilful delay in actions. Take your time to step away to a calmer place but with a conviction to come back stronger and more prepared',
                 destiny: 'Reflection upon what truly matters, stepping away from the actions and relaxing, refocusing'
@@ -250,7 +250,7 @@ export default data = {
             }
         },
 
-        wand: {
+        wands: {
             career: {
                 karma: 'Remember the task is not yet finished. Try not to leave it behind, swept away by any distraction. It is your time to focus and also enjoy in moderation at the same time.',
                 destiny: 'Minor celebration, success but with further work to be done'
@@ -288,7 +288,7 @@ export default data = {
             }
         },
 
-        pentacles: {
+        pents: {
             career: {
                 karma: 'Have a good control over your finances. Learn to be generous with money.',
                 destiny: 'Order, structure, control, power, Holding on too tight to money, frugality turning into stinginess'
@@ -308,7 +308,7 @@ export default data = {
         }
     },
     five:{
-        sword:{
+        swords:{
             career: {
                 karma: 'Try not to take your life matters for granted. Go deeper. Try not to be always sure as you may be missing what is important.',
                 destiny: 'A teaching on overconfidence'
@@ -327,7 +327,7 @@ export default data = {
             }
         },
 
-        wand: {
+        wands: {
             career: {
                 karma: 'Competition is tough. Try not to underestimate anybody. It is time to rise and focus only on yourself in order to do good.',
                 destiny: 'Mock fight that will teach a lesson, quest of achievement between people of equal footing'
@@ -365,7 +365,7 @@ export default data = {
             }
         },
 
-        pentacles: {
+        pents: {
             career: {
                 karma: 'Be cautious of overspending or risky investments. Find refuge in family and togetherness instead of seeking monetary satisfaction.',
                 destiny: 'A disappointment gives teaching. Health and money pose problems'
@@ -385,7 +385,7 @@ export default data = {
         }
     },
     six:{
-        sword:{
+        swords:{
             career: {
                 karma: 'Have patience. Important and well thought out, gradual steps towards the solution will show result eventually.',
                 destiny: 'In mid of a voyage and not yet arrived at solution. The challenges are with you but they are on the way to finding a solution. Counselling helps.'
@@ -404,7 +404,7 @@ export default data = {
             }
         },
 
-        wand: {
+        wands: {
             career: {
                 karma: 'The boat is moving towards calmer waters but it is still you who is rowing it. The worst is over but the work is not.',
                 destiny: 'Triumphant arrival and better days ahead. Adoration. Illusory pomp. Savor the moment but Try not to forget the work.'
@@ -442,7 +442,7 @@ export default data = {
             }
         },
 
-        pentacles: {
+        pents: {
             career: {
                 karma: 'You have a lot and not many are so lucky. Give  to the poor. This gesture will add points to your karma and open the doors for rewards in places you have not imagined.',
                 destiny: 'Generosity of giving and joy of receiving '
@@ -462,7 +462,7 @@ export default data = {
         }
     },
     seven:{
-        sword:{
+        swords:{
             career: {
                 karma: 'Be aware of people playing the game and using you as a pawn or keeping you at a disadvantage for their gain. Keep an open eye for deceit',
                 destiny: 'Theft/loss of idea/power or protection of ideas/power in the light of impending trouble of opposite forces'
@@ -481,7 +481,7 @@ export default data = {
             }
         },
 
-        wand: {
+        wands: {
             career: {
                 karma: 'Times are testing your strength and determination. You need to stay away from ignorance and fear and tackle the issues head on.',
                 destiny: 'Adversities are presenting an opportunity to prove yourself. Standing ground and controlling overwhelming adverse forces'
@@ -519,7 +519,7 @@ export default data = {
             }
         },
 
-        pentacles: {
+        pents: {
             career: {
                 karma: 'Time to think. Take a look around and choose your efforts wisely. Not everything is worth the hard work. Try to love what you do if you cannot do what you love',
                 destiny: 'Harnessing of divergent/challenging conditions, dissatisfaction with the result of hard work, doubts, worry about money/physical well being'
@@ -539,7 +539,7 @@ export default data = {
         }
     },
     eight:{
-        sword:{
+        swords:{
             career: {
                 karma: 'We do feel trapped and isolated sometimes. The only way out is through determination and not through abandonement of the problems. Pray for strength to solve the problems, not for the problems to go away.',
                 destiny: 'Surrounded by problems, need the intelligence, guile and strength to move forward.'
@@ -558,7 +558,7 @@ export default data = {
             }
         },
 
-        wand: {
+        wands: {
             career: {
                 karma: 'Build intelligence and strength to deal with unexpected events in this fast paced time. Be excited and go where the flow takes you, but exercise caution',
                 destiny: 'Exciting time to be experimenting. Situations are leaving you "no time" for yourself. Events are happening fast around you.'
@@ -596,7 +596,7 @@ export default data = {
             }
         },
 
-        pentacles: {
+        pents: {
             career: {
                 karma: 'Find time outside work to get away and relax. Life dominated by greed to succeed has its side effects. Spend more time in finding out what you love and trying to find out if you can make money out of it. This can bring a good balance to your perception of work and money.',
                 destiny: 'Hard work, Descipline, Consistency, Greed, Feeling of effort going in vain and less money for a lot of work.'
@@ -616,7 +616,7 @@ export default data = {
         }
     },
     nine:{
-        sword:{
+        swords:{
             career: {
                 karma: 'This is a reminder to wake up. The negativity and depression in overanalysis of your past can lead to harmful consequences that stretch out to workplace and other avenues of life. Out of the darkest nights, comes the brightest of mornings. Have hope.',
                 destiny: 'Fears, despair, anxiety, worry about career and mistakes made'
@@ -635,7 +635,7 @@ export default data = {
             }
         },
 
-        wand: {
+        wands: {
             career: {
                 karma: 'Patience is especially needed at this moment. Give the environment some time to loosen the deadlocks by itself. Practice detatchment from outcome.',
                 destiny: 'Delays, waiting, vigilance.'
@@ -673,7 +673,7 @@ export default data = {
             }
         },
 
-        pentacles: {
+        pents: {
             career: {
                 karma: 'Be glad to have the luck and the pleasures that you have. Appreciate every bit of hard work you put in and the people who support you. Give back small tokens of appreciation to yourself and others in this small journey of life. ',
                 destiny: 'Luck, money, small indulgence as a token or a gift for hard work and achievement of goals'
@@ -693,7 +693,7 @@ export default data = {
         }
     },
     ten:{
-        sword:{
+        swords:{
             career: {
                 karma: 'Need to look forward and not to cry over what is lost in the past. Change the method and approach the present with a new perspective.',
                 destiny: 'Death of idea/project, pain or loss from inaction or wasted action.'
@@ -712,7 +712,7 @@ export default data = {
             }
         },
 
-        wand: {
+        wands: {
             career: {
                 karma: 'Time to leave the old burdens behind and pursue new ones. They would not come without their own burden but for a while, new beginnings will uplift the spirit.',
                 destiny: 'Burden of the work/past/ideas. Being stuck in a rut. '
@@ -750,7 +750,7 @@ export default data = {
             }
         },
 
-        pentacles: {
+        pents: {
             career: {
                 karma: 'Enjoy your moments, Calm down and share your experience. Give back to charity and earn good luck for the new task ahead.',
                 destiny: 'Environment of completion. Things come full circle and bestow satisfaction and comfort.'
@@ -770,7 +770,7 @@ export default data = {
         }
     },
     page:{
-        sword:{
+        swords:{
             career: {
                 karma: 'Perception is the key to analysing and succeeding in work environments but it does not protect you from making wrong judgement. Stay curious of new oppportunities and wary of mood swings of disinterest and overthinking',
                 destiny: 'Curiosity, alertness, exploring'
@@ -789,7 +789,7 @@ export default data = {
             }
         },
 
-        wand: {
+        wands: {
             career: {
                 karma: 'Time to take risky steps and bold moves to help your career. Right energy and good mix of attitude can help pivot you to the right direction. Time to start following the heart.',
                 destiny: 'Travel, passion, career move, entering, willingness, energy, curiosity to explore new things.'
@@ -827,7 +827,7 @@ export default data = {
             }
         },
 
-        pentacles: {
+        pents: {
             career: {
                 karma: 'It is a good time to plan for future. Be receptive of the current opportunities, trends in investment and be inclined towards finding new ways to earn more through hard work.',
                 destiny: 'Opportunity in land/money, Serious instincts relating to money and future'
@@ -847,7 +847,7 @@ export default data = {
         }
     },
     knight:{
-        sword:{
+        swords:{
             career: {
                 karma: 'Calm down and realize that not everything needs to be solved today. Try not to make uninformed or ignorant decisions as they may land you in trouble.',
                 destiny: 'Conflicts, arrogance, haste, power, teen spirit too smart for it is own good, free speech'
@@ -866,7 +866,7 @@ export default data = {
             }
         },
 
-        wand: {
+        wands: {
             career: {
                 karma: 'Be undeterred by the environment, stand your ground and have faith in your ideas',
                 destiny: 'Rapid changes, center of attention, headstrong man. '
@@ -904,7 +904,7 @@ export default data = {
             }
         },
 
-        pentacles: {
+        pents: {
             career: {
                 karma: 'Take your time and be patient and wise with your career choices but also know that life is what happens when we are busy making plans. Avoid overthinking.',
                 destiny: 'Slow, cautious, protective, less inclined to take action hastily, pragmatic youth, thought out plan, materialistic, serious.'
@@ -924,7 +924,7 @@ export default data = {
         }
     },
     queen:{
-        sword:{
+        swords:{
             career: {
                 karma: 'Leave the past behind. There is nothing to hold on to except learning and the present action at hand. The environment guides you to get up and take firm resolve.',
                 destiny: 'Disappointment in the past, firm and less nurturing environment in career'
@@ -943,7 +943,7 @@ export default data = {
             }
         },
 
-        wand: {
+        wands: {
             career: {
                 karma: 'Leading an active and busy life, you are capable of great creative vision and possess leadership qualities. Express your passions with courage and truthfulness. Those who say what they want, get what they want.',
                 destiny: 'Softer and gentler, development of journey, nurturing of ideas, over sensitive, honorable, social'
@@ -981,7 +981,7 @@ export default data = {
             }
         },
 
-        pentacles: {
+        pents: {
             career: {
                 karma: 'Opportunity to create a warm and homely environment at workplace. You need to create better balance in your life. You have the potential to do it and the time is now.',
                 destiny: 'Excels in mundane life, thankful for her earthy possessions, modest success, care, hardworking, nature loving, traditional '
@@ -1001,7 +1001,7 @@ export default data = {
         }
     },
     king:{
-        sword:{
+        swords:{
             career: {
                 karma: 'If you work hard and are truthful to yourself and others, the environment will spare you, else it will bring you to justice. Just remember to stick with the truth.',
                 destiny: 'Judge, fair, man of ideas, cold, distant, harsh, cruel. Survival of the fittest'
@@ -1020,7 +1020,7 @@ export default data = {
             }
         },
 
-        wand: {
+        wands: {
             career: {
                 karma: 'Time to solidify the ideas from within and embark on a new journey. Time for a new beginning. You need to keep the doubts away now and move forward, the first step is the hardest',
                 destiny: 'Noble man, start of something new, teacher role, charismatic. '
@@ -1058,7 +1058,7 @@ export default data = {
             }
         },
 
-        pentacles: {
+        pents: {
             career: {
                 karma: 'The combination of hard work and empathy can bring you great success. Practice those traits more for better results.',
                 destiny: 'Proud, confident, hard worker, inspires hard work and cautiousness, charming, depth of experience'
@@ -1077,7 +1077,7 @@ export default data = {
             }
         }
     },
-    magician:{
+    the_magician:{
         career: {
             karma: 'Try to find new ways of doing things and take lessons from the past. If there is time for new ideas to take shape, it is now.',
             destiny: 'Time for new ideas to take shape. Inspiration can come from anywhere'
@@ -1095,7 +1095,7 @@ export default data = {
             destiny: 'New companionship, renewed interest in family affairs, start of important events.'
         }
     },
-    highPriestess:{
+    the_high_priestess:{
         career: {
             karma: 'Strong forces are working to veil the truth. You need to watch out keenly for what is good and what is bad. Be careful of deception.',
             destiny: 'Secret, mystery, middle way between inception and creation of idea.'
@@ -1113,7 +1113,7 @@ export default data = {
             destiny: 'Secret, mystery, middle way between inception and creation of idea'
         }
     },
-    empress:{
+    the_empress:{
         career: {
             karma: 'Abundance of opportunities await in your consciousness, spend time with yourself and bring them forth. It is also a great time to be close to nature and to take time off work.',
             destiny: 'Creation of concrete idea, start of bringing the idea to fruition'
@@ -1131,7 +1131,7 @@ export default data = {
             destiny: 'Creation of concrete idea, start of bringing the idea to fruition'
         }
     },
-    emperor:{
+    the_emperor:{
         career: {
             karma: 'Good chances of landing a job/ making good improvements in current work life if you show maturity and wise decision making. Conductive time to seek solid results if you remain stoic, confident and put in generous hard work.',
             destiny: 'Stability, father figure, structure, order '
@@ -1149,7 +1149,7 @@ export default data = {
             destiny: 'Stability, father figure, structure, order.'
         }
     },
-    heirophant:{
+    the_heirophant:{
         career: {
             karma: 'Universe is imparting age old wisdom to you. Understand that without faith in what you do and consistency, nothing ever has been achieved. Time is good for such realization and working methodically towards the goal.',
             destiny: 'Teachings, tradition, consistency, faith, goodness, compassion.'
@@ -1167,7 +1167,7 @@ export default data = {
             destiny: 'Teachings, tradition, consistency, faith, goodness, compassion'
         }
     },
-    lovers:{
+    the_lovers:{
         career: {
             karma: 'This time represents the establishment of a personal belief system and becoming clearer about your own values. This is a time when you are figuring out what you stand for and what your personal philosophy on life is.',
             destiny: 'Fleeting temptation, infatuation, passion, coming together, partial stability.'
@@ -1185,7 +1185,7 @@ export default data = {
             destiny: 'Fleeting temptation, infatuation, passion, coming together, partial stability'
         }
     },
-    chariot:{
+    the_chariot:{
         career: {
             karma: 'When there are difficult times, keep going. Instability in career will resolve only with tough skin and mindset.',
             destiny: 'Coming together of opposing forces, contradiction, instability, duality of thought, hard won victory.'
@@ -1221,7 +1221,7 @@ export default data = {
             destiny: 'Intelligence, Mastering of skill to control the opposite forces, intuition, power of faith'
         }
     },
-    hermit:{
+    the_hermit:{
         career: {
             karma: 'You have the answers within you, there is no need for counselling or looking outside for help. It is time to look into yourself and start planting seeds of confidence and self reliance. This will help you manifest great skills.',
             destiny: 'Peaceful knowledge, experience, introspection, careful thought, near completion of goal, counsellor, need for loneliness, insight'
@@ -1239,7 +1239,7 @@ export default data = {
             destiny: 'Peaceful knowledge, experience, introspection, careful thought, near completion of goal, counsellor, need for loneliness, insight'
         }
     },
-    wheelOfFortune:{
+    wheel_of_fortune:{
         career: {
             karma: 'Be open minded and stoic in this time of change. Big forces working towards the good. Leave the rapid change to itself and hope for the best. Practice letting go and being grateful.',
             destiny: 'Return to the start, wrapping up of loose ends, completion and new beginnings, success or failure in past but opening of new opportunities.'
@@ -1275,7 +1275,7 @@ export default data = {
             destiny: 'Objectivity, balance, making tough decisions, careful thought before action. '
         }
     },
-    hangedMan:{
+    the_hanged_man:{
         career: {
             karma: 'Endure the struggle not by struggling with it, but by changing your reaction to it.',
             destiny: 'Change of perspective, swaying between decisions, trapped, but with no agony, struggle which must be endured, focus, self discovery.'
@@ -1329,7 +1329,7 @@ export default data = {
             destiny: 'Balance, equilibrium, compromise, moderation, reconciliation.'
         }
     },
-    devil:{
+    the_devil:{
         career: {
             karma: 'Avoid denial of problems and confront the issues at hand. Try not to let situations or people take control of your life. Try not to make the choices you are not comfortable making and you will be safe from traps. It is a tough road but you can make it.',
             destiny: 'Unhealthy dependencies are bringing you down. Irresistible powers are working to distract you from your work.'
@@ -1347,7 +1347,7 @@ export default data = {
             destiny: 'Unhealthy intentions and uncontrollable, hard to resist situations are making your life weak and dependent. you are falling into traps and are in denial. '
         }
     },
-    tower:{
+    the_tower:{
         career: {
             karma: 'This is the right time to hold on to and rely on the people that you trust the most. Deception is all around you so choose wisely but mostly keep the important affairs to yourself. Rely more on stability than the risk.',
             destiny: 'Rude awakening, shocking realization or belief, violent shake up in work environment'
@@ -1365,7 +1365,7 @@ export default data = {
             destiny: 'Rude awakening, shocking realization or belief, violent shake up in family values, relations'
         }
     },
-    star:{
+    the_star:{
         career: {
             karma: 'Patience is the key to everything. Leave things which you can not control or cannot predict and focus on the task at hand.',
             destiny: 'Guidance, illumination, nourishment, objective or result is very far, patience is needed '
@@ -1383,7 +1383,7 @@ export default data = {
             destiny: 'Guidance, illumination, nourishment, objective or result is very far, patience is needed '
         }
     },
-    moon:{
+    the_moon:{
         career: {
             karma: 'Navigate through the web of your concerns and bad decisions not by ignoring them but by accepting them. Life is unfair and the only tool you have at your disposal is your own will to do good and survive.',
             destiny: 'Land of danger, time of confusion, questionable decisions, darker side of creativity, scary world.'
@@ -1401,7 +1401,7 @@ export default data = {
             destiny: 'Land of danger, time of confusion, questionable decisions, darker side of creativity, scary world.'
         }
     },
-    sun:{
+    the_sun:{
         career: {
             karma: 'Enjoy the simple experiences. Time to change your outlook from future facing to present facing.  ',
             destiny: 'Happy times of simple and innocent pleasures, amazement, surprises'
@@ -1437,7 +1437,7 @@ export default data = {
             destiny: 'Revisiting things and making peace, cleansing of sin, moving forward with an outlook on the past, carrying it forward, healing, final decision which the the querent does not want to face'
         }
     },
-    world:{
+    the_world:{
         career: {
             karma: 'Look for opportunities as the environment is very conductive and helpful. Be grateful and excited to move on. Brainstorm on new ideas and allow yourself freedom of thought.',
             destiny: 'Looking outwards, completion of long term project, coming out of a long struggle, promotion, journey.'
@@ -1455,7 +1455,7 @@ export default data = {
             destiny: 'looking outwards, completion of long term project, coming out of a long struggle, promotion, journey'
         }
     },
-    fool:{
+    the_fool:{
         career: {
             karma: 'Embrace the eventualities and keep going. There is a way everywhere. Be optimistic and rely on your instincts when it comes to your career choices',
             destiny: 'Unawareness and innocence, blank slate, curiosity, infinite possibilities, questions, wonder, excitement, no idea of the future, optimism. '

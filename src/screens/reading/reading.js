@@ -1,36 +1,38 @@
 import React, { Component } from 'react';
 import { createStackNavigator, createAppContainer } from "react-navigation";
-import { StyleSheet, View, StatusBar, Dimensions, Text, TouchableOpacity, Button } from 'react-native';
+import { StyleSheet, View, StatusBar, Dimensions, Text, TouchableOpacity, Button, Image } from 'react-native';
+import ReadingView from './ReadingView';
 
 export default class ReadingScreen extends Component {
 
     constructor(props){
       super(props);
       this.state = {
-        showText: false
+        readingVisible: false,
+        destiny: 'destiny placeholder',
+        karma: 'karma placeholder'
       }
 
       this.openReading = this.openReading.bind(this);
     }
 
     openReading = () => {
-      this.setState({showText: true})
+      this.setState({readingVisible: true})
     }
 
     render() {
-  
       return (
-          <View style={styles.wrapper}>
-            <View style={styles.container}>
-              <Text style={styles.ReadingName}>{this.props.navigation.getParam('readingName')} Screen</Text>
-              <TouchableOpacity onPress={this.openReading}>
-                <View style={styles.readingButton}>
-                  <Text style={styles.ReadingName}>Click Card</Text>
-                </View>
-              </TouchableOpacity>
-              {this.state.showText && <Text style={styles.ReadingName}>Reading text</Text>}
-            </View>
+      <View style={styles.wrapper}>
+        <View style={styles.container}>
+          <Text style={styles.ReadingName}>{this.props.navigation.getParam('readingName')} Screen</Text>
+          <TouchableOpacity onPress={this.openReading}>
+          <View style={styles.readingButton}>
+            <Text style={styles.ReadingName}>Click Card</Text>
           </View>
+          </TouchableOpacity>
+          <ReadingView destiny={this.state.destiny} karma={this.state.karma}/>
+        </View>
+      </View>
       );
     }
   }
