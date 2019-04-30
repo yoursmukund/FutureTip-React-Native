@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { createStackNavigator, createAppContainer } from "react-navigation";
 import { StyleSheet, View, StatusBar, Dimensions, Text, TouchableOpacity, Button, Image } from 'react-native';
 import ReadingView from './ReadingView';
+import data from '../../data/data';
 
 export default class ReadingScreen extends Component {
 
@@ -9,28 +10,43 @@ export default class ReadingScreen extends Component {
       super(props);
       this.state = {
         readingVisible: false,
-        destiny: 'destiny placeholder',
-        karma: 'karma placeholder'
+        cardDetails: {
+          readingName: this.props.navigation.getParam('readingName'),
+          cardName: '',
+          cardImage:'',
+          destiny: '',
+          karma: '',
+        }
       }
-
       this.openReading = this.openReading.bind(this);
+
+      this.cards = [];
     }
 
     openReading = () => {
-      this.setState({readingVisible: true})
+      this.setState({
+        readingVisible: true,
+        cardDetails: {
+          readingName: this.props.navigation.getParam('readingName'),
+          cardName: '',
+          cardImage:'',
+          destiny: data.death.career.destiny,
+          karma: data.death.career.karma
+        }
+      })
     }
 
     render() {
       return (
       <View style={styles.wrapper}>
         <View style={styles.container}>
-          <Text style={styles.ReadingName}>{this.props.navigation.getParam('readingName')} Screen</Text>
+          <Text style={styles.ReadingName}>{this.state.cardDetails.readingName} Screen</Text>
           <TouchableOpacity onPress={this.openReading}>
           <View style={styles.readingButton}>
             <Text style={styles.ReadingName}>Click Card</Text>
           </View>
           </TouchableOpacity>
-          <ReadingView destiny={this.state.destiny} karma={this.state.karma}/>
+          {this.state.readingVisible ? <ReadingView cardDetails = {this.state.cardDetails}/>: null}
         </View>
       </View>
       );

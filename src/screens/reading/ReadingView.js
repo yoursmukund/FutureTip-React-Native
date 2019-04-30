@@ -7,13 +7,14 @@ export default class ReadingView extends Component{
     super(props);
   }
   render(){
+    let { karma, destiny } = this.props.cardDetails;
     return(
       <View>
         <Image/>
         <Text style={styles.ReadingName}>Destiny</Text>
-        <Text style={styles.ReadingText}>{this.props.destiny}</Text>
+        <Text style={styles.ReadingText}>{destiny}</Text>
         <Text style={styles.ReadingName}>Karma</Text>
-        <Text style={styles.ReadingText}>{this.props.karma}</Text>
+        <Text style={styles.ReadingText}>{karma}</Text>
       </View>
     )
   }
@@ -49,7 +50,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     fontSize: 30,
-  }
+  },
   ReadingText: {
     color: 'white',
     fontSize: 20,
