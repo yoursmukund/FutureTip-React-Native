@@ -13,25 +13,24 @@ export default class ReadingScreen extends Component {
         cardDetails: {
           readingName: this.props.navigation.getParam('readingName'),
           cardName: '',
-          cardImage:'',
           destiny: '',
           karma: '',
         }
       }
       this.openReading = this.openReading.bind(this);
-
-      this.cards = [];
+      this.cards = Object.keys(data);
     }
 
     openReading = () => {
+      let cardName = this.cards[Math.floor(Math.random() * Math.floor(77))];
+      let card = data[cardName];
+      let readingName = this.state.cardDetails.readingName;
       this.setState({
         readingVisible: true,
         cardDetails: {
-          readingName: this.props.navigation.getParam('readingName'),
-          cardName: '',
-          cardImage:'',
-          destiny: data.death.career.destiny,
-          karma: data.death.career.karma
+          cardName: cardName,
+          destiny: card[readingName].destiny,
+          karma: card[readingName].karma
         }
       })
     }
