@@ -14,6 +14,7 @@ export default class ReadingScreen extends Component {
           readingName: this.props.navigation.getParam('readingName'),
           cardName: '',
           destiny: '',
+          image:'',
           karma: '',
         }
       }
@@ -30,7 +31,8 @@ export default class ReadingScreen extends Component {
         cardDetails: {
           cardName: cardName,
           destiny: card[readingName].destiny,
-          karma: card[readingName].karma
+          karma: card[readingName].karma,
+          image: data[cardName].image
         }
       })
     }

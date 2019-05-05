@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Text, Image, View, StyleSheet, Dimensions } from 'react-native';
+// import images from '../../assets';
 
 export default class ReadingView extends Component{
 
@@ -7,10 +8,11 @@ export default class ReadingView extends Component{
     super(props);
   }
   render(){
-    let { karma, destiny } = this.props.cardDetails;
+    let { karma, destiny, cardName, image } = this.props.cardDetails;
     return(
       <View>
-        <Image/>
+        <Image source={image} style={{width: 50, height: 100}}/>
+        <Text style={styles.ReadingName}>{cardName}</Text>
         <Text style={styles.ReadingName}>Destiny</Text>
         <Text style={styles.ReadingText}>{destiny}</Text>
         <Text style={styles.ReadingName}>Karma</Text>
