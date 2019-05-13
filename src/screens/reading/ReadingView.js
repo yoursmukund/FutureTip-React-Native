@@ -11,7 +11,7 @@ export default class ReadingView extends Component{
     let { karma, destiny, cardName, image } = this.props.cardDetails;
     return(
       <View>
-        <Image source={image} style={{width: 50, height: 100}}/>
+        <Image resizeMethod="resize" source={image} style={{width: 50, height: 100}}/>
         <Text style={styles.ReadingName}>{cardName}</Text>
         <Text style={styles.ReadingName}>Destiny</Text>
         <Text style={styles.ReadingText}>{destiny}</Text>

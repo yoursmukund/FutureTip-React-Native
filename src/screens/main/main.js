@@ -1,13 +1,29 @@
 import React, { Component } from 'react';
 import { createStackNavigator, createAppContainer } from "react-navigation";
-import { StyleSheet, View, StatusBar, Dimensions, Text, TouchableOpacity, Button } from 'react-native';
+import { StyleSheet, View, StatusBar, Dimensions, Text, TouchableOpacity, Button, AsyncStorage } from 'react-native';
 
 
 export default class MainScreen extends Component {
+
+  minutesUntilMidnight = () => {
+    var midnight = new Date();
+    midnight.setHours( 24 );
+    midnight.setMinutes( 0 );
+    midnight.setSeconds( 0 );
+    midnight.setMilliseconds( 0 );
+    return ( midnight.getTime() - new Date().getTime() ) / 1000 / 60;
+  }
   openReadingView(key) {
-      this.props.navigation.push('ReadingScreen', {
-        readingName: key
-      });
+      if(this.minutesUntilMidnight() <= 0){
+        AsyncStorage.clear();
+      }
+      AsyncStorage.getItem(key).then((res) => {
+        this.props.navigation.push('ReadingScreen', {
+          readingName: key,
+          existingReading: res
+        });
+      })
+
   }
   render() {
     return (

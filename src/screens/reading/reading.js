@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { createStackNavigator, createAppContainer } from "react-navigation";
-import { StyleSheet, View, StatusBar, Dimensions, Text, TouchableOpacity, Button, Image } from 'react-native';
+import { StyleSheet, View, StatusBar, Dimensions, Text, TouchableOpacity, Button, Image, AsyncStorage } from 'react-native';
 import ReadingView from './ReadingView';
 import data from '../../data/data';
 
@@ -8,16 +8,30 @@ export default class ReadingScreen extends Component {
 
     constructor(props){
       super(props);
+      let readingName = this.props.navigation.getParam('readingName');
+      let cardName = this.props.navigation.getParam('existingReading');
+      let destiny = '';
+      let image = '';
+      let karma = '';
+      if(cardName!==null){
+        let card = data[cardName];
+        destiny = card[readingName].destiny;
+        karma = card[readingName].karma;
+        image = card[readingName].image;
+      }
+
       this.state = {
-        readingVisible: false,
+        readingVisible: cardName !==null ? true: false,
         cardDetails: {
-          readingName: this.props.navigation.getParam('readingName'),
-          cardName: '',
-          destiny: '',
-          image:'',
-          karma: '',
+          readingName: readingName,
+          cardName: cardName!==null ? cardName : '',
+          destiny: destiny,
+          image: image,
+          karma: karma,
         }
       }
+
+
       this.openReading = this.openReading.bind(this);
       this.cards = Object.keys(data);
     }
@@ -27,6 +41,7 @@ export default class ReadingScreen extends Component {
       let card = data[cardName];
       let readingName = this.state.cardDetails.readingName;
       this.setState({
+        readingDone: true,
         readingVisible: true,
         cardDetails: {
           cardName: cardName,
@@ -34,7 +49,9 @@ export default class ReadingScreen extends Component {
           karma: card[readingName].karma,
           image: data[cardName].image
         }
-      })
+      }, () => {
+        AsyncStorage.setItem(readingName, cardName);
+      });
     }
 
     render() {
@@ -42,11 +59,11 @@ export default class ReadingScreen extends Component {
       <View style={styles.wrapper}>
         <View style={styles.container}>
           <Text style={styles.ReadingName}>{this.state.cardDetails.readingName} Screen</Text>
-          <TouchableOpacity onPress={this.openReading}>
+          {!this.state.readingVisible ? <TouchableOpacity onPress={this.openReading}>
           <View style={styles.readingButton}>
             <Text style={styles.ReadingName}>Click Card</Text>
           </View>
-          </TouchableOpacity>
+          </TouchableOpacity>: null}
           {this.state.readingVisible ? <ReadingView cardDetails = {this.state.cardDetails}/>: null}
         </View>
       </View>
