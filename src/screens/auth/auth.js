@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { createStackNavigator, createAppContainer } from "react-navigation";
 import { StyleSheet, View, StatusBar, Dimensions, Text, TouchableOpacity, Button } from 'react-native';
+import Index from '../../example/index';
 
 export default class AuthScreen extends Component {
     render() {
@@ -11,6 +12,7 @@ export default class AuthScreen extends Component {
             title="Login"
             onPress={() => this.props.navigation.navigate('MainScreen')}
           />
+          <Index></Index>
         </View>
       );
     }
