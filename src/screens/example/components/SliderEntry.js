@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TouchableOpacity, AsyncStorage } from 'react-native';
 import PropTypes from 'prop-types';
 import { ParallaxImage } from 'react-native-snap-carousel';
 import styles from '../styles/SliderEntry.style';
@@ -12,6 +12,27 @@ export default class SliderEntry extends Component {
         parallax: PropTypes.bool,
         parallaxProps: PropTypes.object
     };
+
+    minutesUntilMidnight = () => {
+        var midnight = new Date();
+        midnight.setHours( 24 );
+        midnight.setMinutes( 0 );
+        midnight.setSeconds( 0 );
+        midnight.setMilliseconds( 0 );
+        return ( midnight.getTime() - new Date().getTime() ) / 1000 / 60;
+      }
+      openReadingView(key) {
+          if(this.minutesUntilMidnight() <= 0){
+            AsyncStorage.clear();
+          }
+          AsyncStorage.getItem(key).then((res) => {
+            this.props.navigation.push('ReadingScreen', {
+              readingName: key,
+              existingReading: res
+            });
+          })
+    
+      }
 
     get image () {
         const { data: { illustration }, parallax, parallaxProps, even } = this.props;
@@ -35,7 +56,7 @@ export default class SliderEntry extends Component {
     }
 
     render () {
-        const { data: { title, subtitle }, even } = this.props;
+        const { data: { title, subtitle, isRequired }, even } = this.props;
 
         const uppercaseTitle = title ? (
             <Text
@@ -50,7 +71,7 @@ export default class SliderEntry extends Component {
             <TouchableOpacity
               activeOpacity={1}
               style={styles.slideInnerContainer}
-              onPress={() => { alert(`You've clicked '${title}'`); }}
+              onPress={() => {this.openReadingView(title)}}
               >
                 <View style={styles.shadow} />
                 <View style={[styles.imageContainer, even ? styles.imageContainerEven : {}]}>

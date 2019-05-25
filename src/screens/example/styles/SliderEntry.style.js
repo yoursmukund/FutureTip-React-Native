@@ -1,5 +1,5 @@
 import { StyleSheet, Dimensions, Platform } from 'react-native';
-import { colors } from '../styles/index.style';
+import { colors } from './index.style';
 
 const IS_IOS = Platform.OS === 'ios';
 const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window');
@@ -9,7 +9,7 @@ function wp (percentage) {
     return Math.round(value);
 }
 
-const slideHeight = viewportHeight * 0.36;
+const slideHeight = viewportHeight*0.7;
 const slideWidth = wp(75);
 const itemHorizontalMargin = wp(2);
 

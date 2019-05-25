@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { createStackNavigator, createAppContainer } from "react-navigation";
 import { StyleSheet, View, StatusBar, Dimensions, Text, TouchableOpacity, Button, AsyncStorage } from 'react-native';
-
+import Index from '../example/index';
 
 export default class MainScreen extends Component {
 
@@ -30,7 +30,7 @@ export default class MainScreen extends Component {
       // <Provider store={store}>
         <View style={styles.wrapper}>
           {/* <StatusBar barStyle = "light-content" hidden = {false} translucent = {true} style={styles.statusBar}/> */}
-          <View style={styles.container}>
+          {/* <View style={styles.container}>
           <TouchableOpacity onPress={() => {this.openReadingView('health')}}>
             <View style={styles.readingButton}>
               <Text style={styles.ReadingName}>Health</Text>
@@ -51,7 +51,8 @@ export default class MainScreen extends Component {
               <Text style={styles.ReadingName}>Love</Text>
             </View>
           </TouchableOpacity>
-          </View>
+          </View> */}
+          <Index/>
         </View>
       // </Provider>
     );
