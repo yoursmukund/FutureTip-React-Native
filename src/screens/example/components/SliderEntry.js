@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
-import { View, Text, Image, TouchableOpacity, AsyncStorage } from 'react-native';
+import moment from 'moment';
 import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import { AsyncStorage, Image, Text, TouchableOpacity, View } from 'react-native';
 import { ParallaxImage } from 'react-native-snap-carousel';
+import { withNavigation } from "react-navigation";
 import styles from '../styles/SliderEntry.style';
 
-export default class SliderEntry extends Component {
+class SliderEntry extends Component {
 
     static propTypes = {
         data: PropTypes.object.isRequired,
@@ -13,29 +15,24 @@ export default class SliderEntry extends Component {
         parallaxProps: PropTypes.object
     };
 
-    minutesUntilMidnight = () => {
-        var midnight = new Date();
-        midnight.setHours( 24 );
-        midnight.setMinutes( 0 );
-        midnight.setSeconds( 0 );
-        midnight.setMilliseconds( 0 );
-        return ( midnight.getTime() - new Date().getTime() ) / 1000 / 60;
+    minutesUntilMidnight(){
+        return moment("24:00:00", "hh:mm:ss").diff(moment(), 'seconds');
       }
       openReadingView(key) {
-          if(this.minutesUntilMidnight() <= 0){
-            AsyncStorage.clear();
-          }
-          AsyncStorage.getItem(key).then((res) => {
-            this.props.navigation.push('ReadingScreen', {
-              readingName: key,
-              existingReading: res
-            });
-          })
+        if(this.minutesUntilMidnight() <= 0){
+          AsyncStorage.clear();
+        }
+        AsyncStorage.getItem(key).then((res) => {
+          this.props.navigation.push('ReadingScreen', {
+            readingName: key,
+            existingReading: res
+          });
+        })
     
       }
 
     get image () {
-        const { data: { illustration }, parallax, parallaxProps, even } = this.props;
+        const { data: { illustration }, parallax, parallaxProps, even} = this.props;
 
         return parallax ? (
             <ParallaxImage
@@ -56,7 +53,9 @@ export default class SliderEntry extends Component {
     }
 
     render () {
-        const { data: { title, subtitle, isRequired }, even } = this.props;
+        const { data: { title, subtitle, isRequired, id }, even } = this.props;
+
+        
 
         const uppercaseTitle = title ? (
             <Text
@@ -71,7 +70,7 @@ export default class SliderEntry extends Component {
             <TouchableOpacity
               activeOpacity={1}
               style={styles.slideInnerContainer}
-              onPress={() => {this.openReadingView(title)}}
+              onPress={() => {this.openReadingView(id)}}
               >
                 <View style={styles.shadow} />
                 <View style={[styles.imageContainer, even ? styles.imageContainerEven : {}]}>
@@ -91,3 +90,5 @@ export default class SliderEntry extends Component {
         );
     }
 }
+
+export default withNavigation(SliderEntry);
