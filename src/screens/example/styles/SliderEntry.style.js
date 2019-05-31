@@ -79,9 +79,9 @@ export default StyleSheet.create({
         backgroundColor: colors.black
     },
     title: {
+        fontFamily: 'bold',
         color: colors.black,
         fontSize: 13,
-        fontWeight: 'bold',
         letterSpacing: 0.5
     },
     titleEven: {

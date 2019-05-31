@@ -29,29 +29,6 @@ export default class MainScreen extends Component {
     return (
       // <Provider store={store}>
         <View style={styles.wrapper}>
-          {/* <StatusBar barStyle = "light-content" hidden = {false} translucent = {true} style={styles.statusBar}/> */}
-          {/* <View style={styles.container}>
-          <TouchableOpacity onPress={() => {this.openReadingView('health')}}>
-            <View style={styles.readingButton}>
-              <Text style={styles.ReadingName}>Health</Text>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => {this.openReadingView('family')}}>
-            <View style={styles.readingButton}>
-              <Text style={styles.ReadingName}>Family</Text>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => {this.openReadingView('career')}}>
-            <View style={styles.readingButton}>
-              <Text style={styles.ReadingName}>Career</Text> 
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => {this.openReadingView('love')}}>
-            <View style={styles.readingButton}>
-              <Text style={styles.ReadingName}>Love</Text>
-            </View>
-          </TouchableOpacity>
-          </View> */}
           <Index/>
         </View>
       // </Provider>

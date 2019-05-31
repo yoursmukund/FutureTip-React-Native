@@ -62,7 +62,7 @@ class SliderEntry extends Component {
               style={[styles.title, even ? styles.titleEven : {}]}
               numberOfLines={2}
             >
-                { title.toUpperCase() }
+                { title }
             </Text>
         ) : false;
 

@@ -13,6 +13,7 @@
     "react-native": "^0.59.4",
     "react-native-gesture-handler": "^1.1.0",
     "react-native-linear-gradient": "^2.5.4",
+    "react-native-share": "^1.2.1",
     "react-native-snap-carousel": "^3.7.5",
     "react-navigation": "^3.8.1",
     "react-redux": "^7.0.2",
@@ -30,5 +31,10 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "src/assets/fonts"
+    ]
   }
 }

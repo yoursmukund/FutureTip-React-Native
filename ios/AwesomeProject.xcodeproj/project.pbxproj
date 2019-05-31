@@ -42,6 +42,13 @@
 		A97564DF47B24A97B03C82B3 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76802C23B0B045B18888FDA7 /* libRNGestureHandler.a */; };
 		FD6C0FF6E8A440EC8F887126 /* libRNGestureHandler-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B134D53A9147E8BD203EAB /* libRNGestureHandler-tvOS.a */; };
 		73AA7086E5E14E0A811DA6E2 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C42A6D8141B64E6181AE82CE /* libBVLinearGradient.a */; };
+		E89EE036A3F7467A9E8B613D /* libRNShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9282229841974CB7A6B79BCE /* libRNShare.a */; };
+		4AB2D2DF297A4B29A16F54E4 /* bold.woff in Resources */ = {isa = PBXBuildFile; fileRef = C999D7BAF9934698BC85F110 /* bold.woff */; };
+		E514A01070B84EBABAC0EE97 /* light.woff in Resources */ = {isa = PBXBuildFile; fileRef = F77559058ED44D979ECC1382 /* light.woff */; };
+		8EDCCF450BF349D08E4C8C86 /* regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = 6E5B7B659BDD469085DA733E /* regular.woff */; };
+		3D851B032F204CA8899FEF17 /* bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC77A5D3726E4FF6A17A1661 /* bold.ttf */; };
+		7378852E2EFC4366BE089667 /* light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5A1143174B7425B9A4AF390 /* light.ttf */; };
+		EFD0AB51FD8D4A438A40FA4E /* regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A0081DADFFC4E6FB96F6F95 /* regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -354,6 +361,14 @@
 		17B134D53A9147E8BD203EAB /* libRNGestureHandler-tvOS.a */ = {isa = PBXFileReference; name = "libRNGestureHandler-tvOS.a"; path = "libRNGestureHandler-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		683138142E9F4052BC4C4337 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; name = "BVLinearGradient.xcodeproj"; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		C42A6D8141B64E6181AE82CE /* libBVLinearGradient.a */ = {isa = PBXFileReference; name = "libBVLinearGradient.a"; path = "libBVLinearGradient.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		A5E12C3FF65844DD810C492D /* RNShare.xcodeproj */ = {isa = PBXFileReference; name = "RNShare.xcodeproj"; path = "../node_modules/react-native-share/ios/RNShare.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		9282229841974CB7A6B79BCE /* libRNShare.a */ = {isa = PBXFileReference; name = "libRNShare.a"; path = "libRNShare.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		C999D7BAF9934698BC85F110 /* bold.woff */ = {isa = PBXFileReference; name = "bold.woff"; path = "../src/assets/fonts/bold.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F77559058ED44D979ECC1382 /* light.woff */ = {isa = PBXFileReference; name = "light.woff"; path = "../src/assets/fonts/light.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6E5B7B659BDD469085DA733E /* regular.woff */ = {isa = PBXFileReference; name = "regular.woff"; path = "../src/assets/fonts/regular.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BC77A5D3726E4FF6A17A1661 /* bold.ttf */ = {isa = PBXFileReference; name = "bold.ttf"; path = "../src/assets/fonts/bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D5A1143174B7425B9A4AF390 /* light.ttf */ = {isa = PBXFileReference; name = "light.ttf"; path = "../src/assets/fonts/light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9A0081DADFFC4E6FB96F6F95 /* regular.ttf */ = {isa = PBXFileReference; name = "regular.ttf"; path = "../src/assets/fonts/regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,6 +399,7 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				A97564DF47B24A97B03C82B3 /* libRNGestureHandler.a in Frameworks */,
 				73AA7086E5E14E0A811DA6E2 /* libBVLinearGradient.a in Frameworks */,
+				E89EE036A3F7467A9E8B613D /* libRNShare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +592,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				F7FACAC5BEC94E13B6F728EE /* RNGestureHandler.xcodeproj */,
 				683138142E9F4052BC4C4337 /* BVLinearGradient.xcodeproj */,
+				A5E12C3FF65844DD810C492D /* RNShare.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -597,6 +614,7 @@
 				00E356EF1AD99517003FC87E /* AwesomeProjectTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				8F6A3EB9134D4404B99BDA6F /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -622,6 +640,20 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		8F6A3EB9134D4404B99BDA6F /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				C999D7BAF9934698BC85F110 /* bold.woff */,
+				F77559058ED44D979ECC1382 /* light.woff */,
+				6E5B7B659BDD469085DA733E /* regular.woff */,
+				BC77A5D3726E4FF6A17A1661 /* bold.ttf */,
+				D5A1143174B7425B9A4AF390 /* light.ttf */,
+				9A0081DADFFC4E6FB96F6F95 /* regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -1069,6 +1101,12 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				4AB2D2DF297A4B29A16F54E4 /* bold.woff in Resources */,
+				E514A01070B84EBABAC0EE97 /* light.woff in Resources */,
+				8EDCCF450BF349D08E4C8C86 /* regular.woff in Resources */,
+				3D851B032F204CA8899FEF17 /* bold.ttf in Resources */,
+				7378852E2EFC4366BE089667 /* light.ttf in Resources */,
+				EFD0AB51FD8D4A438A40FA4E /* regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1206,11 +1244,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-share\ios",
 				);
 			};
 			name = Debug;
@@ -1235,11 +1275,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-share\ios",
 				);
 			};
 			name = Release;
@@ -1264,6 +1306,7 @@
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-share\ios",
 				);
 			};
 			name = Debug;
@@ -1287,6 +1330,7 @@
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-share\ios",
 				);
 			};
 			name = Release;
@@ -1319,11 +1363,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-share\ios",
 				);
 			};
 			name = Debug;
@@ -1356,11 +1402,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-share\ios",
 				);
 			};
 			name = Release;
@@ -1392,11 +1440,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-share\ios",
 				);
 			};
 			name = Debug;
@@ -1428,11 +1478,13 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-share\ios",
 				);
 			};
 			name = Release;

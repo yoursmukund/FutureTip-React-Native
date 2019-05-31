@@ -36,8 +36,8 @@ export default StyleSheet.create({
         backgroundColor: 'transparent',
         color: 'rgba(255, 255, 255, 0.9)',
         fontSize: 20,
-        fontWeight: 'bold',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontFamily: 'light',
     },
     titleDark: {
         color: colors.black
@@ -48,8 +48,8 @@ export default StyleSheet.create({
         backgroundColor: 'transparent',
         color: 'rgba(255, 255, 255, 0.75)',
         fontSize: 13,
-        fontStyle: 'italic',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontFamily: 'regular',
     },
     slider: {
         marginTop: 15,
