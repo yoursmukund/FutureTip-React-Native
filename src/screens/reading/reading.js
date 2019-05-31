@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { createStackNavigator, createAppContainer } from "react-navigation";
-import { StyleSheet, View, StatusBar, Dimensions, Text, TouchableOpacity, Button, Image, AsyncStorage } from 'react-native';
-import ReadingView from './ReadingView';
+import { AsyncStorage, Dimensions, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import data from '../../data/data';
+import ReadingView from './ReadingView';
 
 export default class ReadingScreen extends Component {
 

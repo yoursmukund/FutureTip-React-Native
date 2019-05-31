@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { createStackNavigator, createAppContainer } from "react-navigation";
-import { StyleSheet, View, StatusBar, Dimensions, Text, TouchableOpacity, Button } from 'react-native';
+import { Button, Text, View } from 'react-native';
 
 export default class AuthScreen extends Component {
     render() {

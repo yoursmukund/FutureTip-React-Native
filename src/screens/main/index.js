@@ -11,7 +11,7 @@ import { itemWidth, sliderWidth } from './styles/SliderEntry.style';
 const IS_ANDROID = Platform.OS === 'android';
 const SLIDER_1_FIRST_ITEM = 1;
 
-export default class example extends Component {
+export default class MainScreen extends Component {
 
     constructor (props) {
         super(props);
