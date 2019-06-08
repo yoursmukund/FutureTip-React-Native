@@ -1,6 +1,6 @@
 /* eslint-disable no-return-assign */
 import React, { Component } from 'react';
-import { Platform, SafeAreaView, ScrollView, StatusBar, Text, View } from 'react-native';
+import { Platform, ScrollView, StatusBar, Text, View } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Carousel, { Pagination } from 'react-native-snap-carousel';
 import SliderEntry from './components/SliderEntry';
@@ -22,7 +22,6 @@ export default class MainScreen extends Component {
     }
 
     static navigationOptions = {
-        //To hide the NavigationBar from current Screen
         header: null
       };
 
@@ -89,9 +88,7 @@ export default class MainScreen extends Component {
     }
 
     componentDidMount() {
-      // do stuff while splash screen is shown
-        // After having done stuff (such as async tasks) hide the splash screen
-        SplashScreen.hide();
+      SplashScreen.hide();
     }
 
     render () {

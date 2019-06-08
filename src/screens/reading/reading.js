@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { AsyncStorage, Dimensions, StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
+import { AsyncStorage, Image, StyleSheet, Text, View, Animated, StatusBar, ScrollView } from 'react-native';
+import FlipCard from 'react-native-flip-card';
 import data from '../../data/data';
 import ReadingView from './ReadingView';
-import FlipCard from 'react-native-flip-card';
+import style, { colors } from '../main/styles/index.style';
+import LinearGradient from 'react-native-linear-gradient';
 
 CardImage = (props) => {
   let {back, state} = props;
@@ -13,9 +15,7 @@ CardImage = (props) => {
   } else {
   }
   return (
-    <View style={styles.readingButton}>
-      <Image resizeMethod="resize" source={source} style={{width: 50, height: 100}}/>
-    </View>
+      <Image resizeMethod="resize" source={source} style={{width: 120, height: 200}}/>
   )
 }
 
@@ -52,6 +52,17 @@ export default class ReadingScreen extends Component {
       this.cards = Object.keys(data);
     }
 
+    get gradient () {
+      return (
+          <LinearGradient
+            colors={[colors.background1, colors.background2]}
+            startPoint={{ x: 1, y: 0 }}
+            endPoint={{ x: 0, y: 1 }}
+            style={style.gradient}
+          />
+      );
+  }
+
     getReading = () => {
       let cardName = this.cards[Math.floor(Math.random() * Math.floor(77))];
       let card = data[cardName];
@@ -81,11 +92,21 @@ export default class ReadingScreen extends Component {
       }
     }
 
+    static navigationOptions = {
+      header: null
+    };
+
     render() {
       return (
       <View style={styles.wrapper}>
-        <View style={styles.container}>
-          <Text style={styles.ReadingName}>{this.state.cardDetails.readingName} Screen</Text>
+        <StatusBar
+          translucent={true}
+          backgroundColor={'rgba(0, 0, 0, 0.3)'}
+          barStyle={'light-content'}
+        />
+        { this.gradient }
+        <ScrollView style={styles.wrapper}>
+          {!this.state.readingVisible ? <Text style={styles.relaxText}>Focus, relax and pick the card below</Text> : null}
             <FlipCard
                 flipHorizontal={true}
                 flipVertical={false}
@@ -97,7 +118,7 @@ export default class ReadingScreen extends Component {
               <CardImage back={false} state={this.state}/>
             </FlipCard>
           {this.state.readingVisible ? <ReadingView cardDetails = {this.state.cardDetails}/>: null}
-        </View>
+        </ScrollView>
       </View>
       );
     }
@@ -105,33 +126,14 @@ export default class ReadingScreen extends Component {
 
   const styles = StyleSheet.create({
     wrapper: {
-      flex: 1 
+      flex: 1
     },
   
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#363f45',
-      flexDirection: 'column',
-    },
-  
-    statusBar: {
-      backgroundColor:"#363f45"
-    },
-  
-    readingButton: {
-      height: 100,
-      marginTop: 20,
-      width: 50,
-      justifyContent: 'center',
-      backgroundColor: 'cyan',
-      alignItems: 'center',
-    },
-  
-    ReadingName: {
-      color: 'white',
-      fontWeight: 'bold',
-      fontSize: 30,
+    relaxText: {
+      paddingVertical: 30,
+      fontFamily: 'bold',
+      color: '#1a1917',
+      fontSize: 20,
+      letterSpacing: 0.5
     }
   });
