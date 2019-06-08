@@ -7,6 +7,7 @@ import SliderEntry from './components/SliderEntry';
 import { ENTRIES1 } from './static/entries';
 import styles, { colors } from './styles/index.style';
 import { itemWidth, sliderWidth } from './styles/SliderEntry.style';
+import SplashScreen from 'react-native-splash-screen';
 
 const IS_ANDROID = Platform.OS === 'android';
 const SLIDER_1_FIRST_ITEM = 1;
@@ -85,6 +86,12 @@ export default class MainScreen extends Component {
               style={styles.gradient}
             />
         );
+    }
+
+    componentDidMount() {
+      // do stuff while splash screen is shown
+        // After having done stuff (such as async tasks) hide the splash screen
+        SplashScreen.hide();
     }
 
     render () {
