@@ -16,6 +16,7 @@
     "react-native-linear-gradient": "^2.5.4",
     "react-native-share": "^1.2.1",
     "react-native-snap-carousel": "^3.7.5",
+    "react-native-splash-screen": "^3.2.0",
     "react-navigation": "^3.8.1",
     "react-redux": "^7.0.2",
     "redux": "^4.0.1"
