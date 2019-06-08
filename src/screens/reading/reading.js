@@ -1,7 +1,23 @@
 import React, { Component } from 'react';
-import { AsyncStorage, Dimensions, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { AsyncStorage, Dimensions, StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
 import data from '../../data/data';
 import ReadingView from './ReadingView';
+import FlipCard from 'react-native-flip-card';
+
+CardImage = (props) => {
+  let {back, state} = props;
+
+  let source = state.cardDetails.image ? state.cardDetails.image : null;
+  if(back){
+    source = require('../../assets/images/card_back.png')
+  } else {
+  }
+  return (
+    <View style={styles.readingButton}>
+      <Image resizeMethod="resize" source={source} style={{width: 50, height: 100}}/>
+    </View>
+  )
+}
 
 export default class ReadingScreen extends Component {
 
@@ -16,7 +32,7 @@ export default class ReadingScreen extends Component {
         let card = data[cardName];
         destiny = card[readingName].destiny;
         karma = card[readingName].karma;
-        image = card[readingName].image;
+        image = card.image;
       }
 
       this.state = {
@@ -31,26 +47,38 @@ export default class ReadingScreen extends Component {
       }
 
 
-      this.openReading = this.openReading.bind(this);
+      this.getReading = this.getReading.bind(this);
+      this.saveReading = this.saveReading.bind(this);
       this.cards = Object.keys(data);
     }
 
-    openReading = () => {
+    getReading = () => {
       let cardName = this.cards[Math.floor(Math.random() * Math.floor(77))];
       let card = data[cardName];
       let readingName = this.state.cardDetails.readingName;
       this.setState({
-        readingDone: true,
-        readingVisible: true,
         cardDetails: {
+          readingName: readingName,
           cardName: cardName,
           destiny: card[readingName].destiny,
           karma: card[readingName].karma,
           image: data[cardName].image
         }
-      }, () => {
-        AsyncStorage.setItem(readingName, cardName);
       });
+    }
+
+    saveReading = () => {
+      this.setState({
+        readingVisible: true
+      },() => {
+        AsyncStorage.setItem(this.state.cardDetails.readingName, this.state.cardDetails.cardName);
+      });
+    }
+
+    componentDidMount(){
+      if(!this.state.readingVisible){
+        this.getReading();
+      }
     }
 
     render() {
@@ -58,11 +86,16 @@ export default class ReadingScreen extends Component {
       <View style={styles.wrapper}>
         <View style={styles.container}>
           <Text style={styles.ReadingName}>{this.state.cardDetails.readingName} Screen</Text>
-          {!this.state.readingVisible ? <TouchableOpacity onPress={this.openReading}>
-          <View style={styles.readingButton}>
-            <Text style={styles.ReadingName}>Click Card</Text>
-          </View>
-          </TouchableOpacity>: null}
+            <FlipCard
+                flipHorizontal={true}
+                flipVertical={false}
+                onFlipEnd={()=>{this.saveReading()}}
+                flip={this.state.readingVisible}
+                clickable={!this.state.readingVisible}
+            >
+              <CardImage back={true} state={this.state} />
+              <CardImage back={false} state={this.state}/>
+            </FlipCard>
           {this.state.readingVisible ? <ReadingView cardDetails = {this.state.cardDetails}/>: null}
         </View>
       </View>
@@ -90,10 +123,10 @@ export default class ReadingScreen extends Component {
     readingButton: {
       height: 100,
       marginTop: 20,
-      width: Dimensions.get('window').width-20,
-      backgroundColor: 'lightseagreen',
+      width: 50,
       justifyContent: 'center',
-      alignItems: 'center'
+      backgroundColor: 'cyan',
+      alignItems: 'center',
     },
   
     ReadingName: {
