@@ -1,26 +1,26 @@
 export const ENTRIES1 = [
     {
         title: 'Love Reading',
-        subtitle: '',
-        illustration: 'https://www.anglavakt.nu/uploads/KeEHEsQk/737x0_360x0/kort.jpg',
+        subtitle: 'Find out what cards say about your life around loved ones',
+        illustration: require('../../../assets/images/art2.jpg'),
         id: 'love'
     },
     {
         title: 'Career Reading',
-        subtitle: '',
-        illustration: 'https://t3.ftcdn.net/jpg/01/19/25/56/500_F_119255667_HKkR8JL1zhPoCmB97oJGcM27gTYRnUTu.jpg',
+        subtitle: 'Let the cards guide you in your day to day work',
+        illustration: require('../../../assets/images/art4.jpg'),
         id: 'career'
     },
     {
-        title: 'Health Reading',
-        subtitle: '',
-        illustration: 'https://previews.123rf.com/images/katrintimoff/katrintimoff1608/katrintimoff160800085/63246379-tarot-cards-mystical-old-background-senior-card-world-.jpg',
+        title: 'Wellness Reading',
+        subtitle: 'Improve your life with advice from the cards',
+        illustration: require('../../../assets/images/art1.jpg'),
         id: 'health'
     },
     {
         title: 'Family Reading',
-        subtitle: '',
-        illustration: 'https://t3.ftcdn.net/jpg/01/19/25/56/500_F_119255667_HKkR8JL1zhPoCmB97oJGcM27gTYRnUTu.jpg',
+        subtitle: 'Let the cards show you the way to navigate family life',
+        illustration: require('../../../assets/images/art3.jpg'),
         id: 'family'
     }
 ];

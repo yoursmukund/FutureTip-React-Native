@@ -20,6 +20,11 @@ export default class MainScreen extends Component {
         };
     }
 
+    static navigationOptions = {
+        //To hide the NavigationBar from current Screen
+        header: null
+      };
+
     _renderItemWithParallax ({item, index}, parallaxProps) {
         return (
             <SliderEntry
@@ -86,7 +91,6 @@ export default class MainScreen extends Component {
         const example1 = this.mainExample('Daily Readings', 'Let the tarot cards guide you daily on Love, Career, Health and Family');
 
         return (
-            <SafeAreaView style={styles.safeArea}>
                 <View style={styles.container}>
                     <StatusBar
                       translucent={true}
@@ -97,12 +101,12 @@ export default class MainScreen extends Component {
                     <ScrollView
                       style={styles.scrollview}
                       scrollEventThrottle={200}
+                      contentContainerStyle={{flexGrow : 1, justifyContent : 'space-evenly'}}
                       directionalLockEnabled={true}
                     >
                         { example1 }
                     </ScrollView>
                 </View>
-            </SafeAreaView>
         );
     }
 }
