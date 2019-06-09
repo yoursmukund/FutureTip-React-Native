@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet, Dimensions } from 'react-native';
+import { colors } from '../main/styles/index.style';
 
 export default class ReadingView extends Component{
 
@@ -9,50 +10,75 @@ export default class ReadingView extends Component{
   render(){
     let { karma, destiny, cardName } = this.props.cardDetails;
     return(
-      <View>
-        <Text style={styles.ReadingName}>{cardName}</Text>
-        <Text style={styles.ReadingName}>Destiny</Text>
-        <Text style={styles.ReadingText}>{destiny}</Text>
-        <Text style={styles.ReadingName}>Karma</Text>
-        <Text style={styles.ReadingText}>{karma}</Text>
+      <View style={styles.wrapper}>
+        <Text style={styles.cardName}>{cardName.replace('_', ' ').toUpperCase()}</Text>
+        <Text style={styles.titles}>DESTINY</Text>
+        <View style = {styles.lineStyle} />
+        <Text style={styles.subtitles}>"The situations surrounding you"</Text>
+        <Text style={styles.readingText}>{destiny}</Text>
+        <Text style={styles.titles}>KARMA</Text>
+        <View style = {styles.lineStyle} />
+        <Text style={styles.subtitles}>"Things you can do"</Text>
+        <Text style={styles.readingTextBottom}>{karma}</Text>
       </View>
     )
   }
 }
 
 const styles = StyleSheet.create({
-  wrapper: {
-    flex: 1 
-  },
 
-  container: {
-    flex: 1,
+  titles: {
+    paddingTop: 20,
+    fontFamily: 'bold',
+    color: 'rgba(255, 255, 255, 0.75)',
+    fontSize: 22,
+    letterSpacing: 0.5
+  },
+  subtitles: {
+    paddingTop: 5,
+    fontFamily: 'light',
+    color: 'rgba(255, 255, 255, 0.75)',
+    fontSize: 13,
+    letterSpacing: 0.5,
+    fontStyle: 'italic'
+  },
+  cardName: {
+    fontFamily: 'regular',
+    color: 'rgba(255, 255, 255, 0.75)',
+    color: '#ffff19',
+    fontSize: 20,
+    letterSpacing: 0.5,
+    paddingTop: 20,
+    paddingBottom: 20,
+  },
+  readingText: {
+    fontFamily: 'light',
+    paddingTop: 20,
+    color: 'rgba(255, 255, 255, 0.75)',
+    fontSize: 17,
+    textAlign: 'center',
+    paddingLeft: 40,
+    paddingRight: 40
+  },
+  wrapper:{
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#363f45',
-    flexDirection: 'column',
+    height: Dimensions.get('window').height/1.5
   },
-
-  statusBar: {
-    backgroundColor:"#363f45"
+  lineStyle:{
+    borderWidth: 0.5,
+    borderColor:'rgba(255, 255, 255, 0.75)',
+    margin:5,
+    width: 40
   },
-
-  readingButton: {
-    height: 100,
-    marginTop: 20,
-    width: Dimensions.get('window').width-20,
-    backgroundColor: 'lightseagreen',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-
-  ReadingName: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: 30,
-  },
-  ReadingText: {
-    color: 'white',
-    fontSize: 20,
+  readingTextBottom: {
+    fontFamily: 'light',
+    paddingTop: 20,
+    paddingBottom: 60,
+    color: 'rgba(255, 255, 255, 0.75)',
+    fontSize: 17,
+    textAlign: 'center',
+    paddingLeft: 40,
+    paddingRight: 40
   }
 });

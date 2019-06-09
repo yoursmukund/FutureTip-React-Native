@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AsyncStorage, Image, StyleSheet, Text, View, Animated, StatusBar, ScrollView } from 'react-native';
+import { AsyncStorage, Image, StyleSheet, Text, View, Animated, StatusBar, ScrollView, Dimensions } from 'react-native';
 import FlipCard from 'react-native-flip-card';
 import data from '../../data/data';
 import ReadingView from './ReadingView';
@@ -105,17 +105,20 @@ export default class ReadingScreen extends Component {
           barStyle={'light-content'}
         />
         { this.gradient }
-        <ScrollView style={styles.wrapper}>
+        <ScrollView 
+        style={styles.wrapper}
+        contentContainerStyle={{flexGrow : 1, justifyContent : 'space-evenly', alignItems: 'center'}}>
           {!this.state.readingVisible ? <Text style={styles.relaxText}>Focus, relax and pick the card below</Text> : null}
             <FlipCard
-                flipHorizontal={true}
-                flipVertical={false}
-                onFlipEnd={()=>{this.saveReading()}}
-                flip={this.state.readingVisible}
-                clickable={!this.state.readingVisible}
+              style={styles.flipCard}
+              flipHorizontal={true}
+              flipVertical={false}
+              onFlipEnd={()=>{this.saveReading()}}
+              flip={this.state.readingVisible}
+              clickable={!this.state.readingVisible}
             >
-              <CardImage back={true} state={this.state} />
-              <CardImage back={false} state={this.state}/>
+                <CardImage back={true} state={this.state} />
+                <CardImage back={false} state={this.state}/>
             </FlipCard>
           {this.state.readingVisible ? <ReadingView cardDetails = {this.state.cardDetails}/>: null}
         </ScrollView>
@@ -126,13 +129,17 @@ export default class ReadingScreen extends Component {
 
   const styles = StyleSheet.create({
     wrapper: {
-      flex: 1
+      flex: 1,
+    },
+    flipCard:{
+      paddingTop: 100,
+      height: Dimensions.get('window').height/3
     },
   
     relaxText: {
-      paddingVertical: 30,
+      paddingTop: 50,
       fontFamily: 'bold',
-      color: '#1a1917',
+      color: 'rgba(255, 255, 255, 0.75)',
       fontSize: 20,
       letterSpacing: 0.5
     }
