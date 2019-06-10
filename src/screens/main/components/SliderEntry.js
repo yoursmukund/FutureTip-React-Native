@@ -1,4 +1,3 @@
-import moment from 'moment';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { AsyncStorage, Image, Text, TouchableOpacity, View } from 'react-native';
@@ -15,21 +14,23 @@ class SliderEntry extends Component {
         parallaxProps: PropTypes.object
     };
 
-    minutesUntilMidnight(){
-        return moment("24:00:00", "hh:mm:ss").diff(moment(), 'seconds');
-      }
-      openReadingView(key) {
-        if(this.minutesUntilMidnight() <= 0){
+    openReadingView(key) {
+      AsyncStorage.getItem('date').then((savedDate)=>{
+        alert((savedDate === (new Date).getDate().toString()))
+        if((savedDate === null) || (savedDate === (new Date).getDate().toString())){
+          AsyncStorage.getItem(key).then((res) => {
+            this.props.navigation.push('ReadingScreen', {
+              readingName: key,
+              existingReading: res
+            });
+          });
+        } else if(savedDate !== (new Date).getDate().toString()){
+          //Date has passed, refresh the readings
           AsyncStorage.clear();
         }
-        AsyncStorage.getItem(key).then((res) => {
-          this.props.navigation.push('ReadingScreen', {
-            readingName: key,
-            existingReading: res
-          });
-        })
-    
-      }
+      });
+  
+    }
 
     get image () {
         const { data: { illustration }, parallax, parallaxProps, even} = this.props;

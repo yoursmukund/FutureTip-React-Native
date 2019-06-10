@@ -83,6 +83,7 @@ export default class ReadingScreen extends Component {
         readingVisible: true
       },() => {
         AsyncStorage.setItem(this.state.cardDetails.readingName, this.state.cardDetails.cardName);
+        AsyncStorage.setItem('date', (new Date()).getDate().toString());
       });
     }
 
