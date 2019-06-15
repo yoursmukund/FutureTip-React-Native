@@ -16,7 +16,6 @@ class SliderEntry extends Component {
 
     openReadingView(key) {
       AsyncStorage.getItem('date').then((savedDate)=>{
-        alert((savedDate === (new Date).getDate().toString()))
         if((savedDate === null) || (savedDate === (new Date).getDate().toString())){
           AsyncStorage.getItem(key).then((res) => {
             this.props.navigation.push('ReadingScreen', {
@@ -26,7 +25,12 @@ class SliderEntry extends Component {
           });
         } else if(savedDate !== (new Date).getDate().toString()){
           //Date has passed, refresh the readings
-          AsyncStorage.clear();
+          AsyncStorage.clear().then(() => {
+            this.props.navigation.push('ReadingScreen', {
+              readingName: key,
+              existingReading: null
+            });
+          });
         }
       });
   

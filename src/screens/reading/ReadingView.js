@@ -2,24 +2,34 @@ import React, { Component } from 'react';
 import { Text, View, StyleSheet, Dimensions } from 'react-native';
 import { colors } from '../main/styles/index.style';
 
-export default class ReadingView extends Component{
+ReadingText = (props) => {
+  let { titles, subtitles, readingText } = props;
+  return (
+    <View>
+      <Text style={styles.titles}>{titles}</Text>
+      <View style={styles.lineStyle} />
+      <Text style={styles.subtitles}>"{subtitles}"</Text>
+      <Text style={styles.readingText}>{readingText}</Text>
+    </View>
+  )
+}
+export default class ReadingView extends Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
   }
-  render(){
-    let { karma, destiny, cardName } = this.props.cardDetails;
-    return(
+  render() {
+    let { karma, destiny } = this.props.cardDetails;
+    return (
       <View style={styles.wrapper}>
-        <Text style={styles.cardName}>{cardName.replace('_', ' ').toUpperCase()}</Text>
-        <Text style={styles.titles}>DESTINY</Text>
-        <View style = {styles.lineStyle} />
-        <Text style={styles.subtitles}>"The situations surrounding you"</Text>
-        <Text style={styles.readingText}>{destiny}</Text>
-        <Text style={styles.titles}>KARMA</Text>
-        <View style = {styles.lineStyle} />
-        <Text style={styles.subtitles}>"Things you can do"</Text>
-        <Text style={styles.readingTextBottom}>{karma}</Text>
+        <ReadingText
+          titles={'DESTINY'}
+          subtitles={'The situations surrounding you'}
+          readingText={destiny} />
+        <ReadingText
+          titles={'KARMA'}
+          subtitles={'Things you can do'}
+          readingText={karma} />
       </View>
     )
   }
@@ -28,11 +38,11 @@ export default class ReadingView extends Component{
 const styles = StyleSheet.create({
 
   titles: {
-    paddingTop: 20,
     fontFamily: 'bold',
     color: 'rgba(255, 255, 255, 0.75)',
     fontSize: 22,
-    letterSpacing: 0.5
+    letterSpacing: 0.5,
+    textAlign: 'center',
   },
   subtitles: {
     paddingTop: 5,
@@ -40,16 +50,8 @@ const styles = StyleSheet.create({
     color: 'rgba(255, 255, 255, 0.75)',
     fontSize: 13,
     letterSpacing: 0.5,
-    fontStyle: 'italic'
-  },
-  cardName: {
-    fontFamily: 'regular',
-    color: 'rgba(255, 255, 255, 0.75)',
-    color: '#ffff19',
-    fontSize: 20,
-    letterSpacing: 0.5,
-    paddingTop: 20,
-    paddingBottom: 20,
+    fontStyle: 'italic',
+    textAlign: 'center',
   },
   readingText: {
     fontFamily: 'light',
@@ -60,25 +62,15 @@ const styles = StyleSheet.create({
     paddingLeft: 40,
     paddingRight: 40
   },
-  wrapper:{
-    justifyContent: 'center',
+  wrapper: {
+    justifyContent: 'space-evenly',
     alignItems: 'center',
-    height: Dimensions.get('window').height/1.5
+    height: Dimensions.get('window').height / 1.5,
   },
-  lineStyle:{
+  lineStyle: {
     borderWidth: 0.5,
-    borderColor:'rgba(255, 255, 255, 0.75)',
-    margin:5,
-    width: 40
+    borderColor: 'rgba(255, 255, 255, 0.75)',
+    alignSelf: 'center',
+    width: 40,
   },
-  readingTextBottom: {
-    fontFamily: 'light',
-    paddingTop: 20,
-    paddingBottom: 60,
-    color: 'rgba(255, 255, 255, 0.75)',
-    fontSize: 17,
-    textAlign: 'center',
-    paddingLeft: 40,
-    paddingRight: 40
-  }
 });
