@@ -1,6 +1,6 @@
 /* eslint-disable no-return-assign */
 import React, { Component } from 'react';
-import { Platform, ScrollView, StatusBar, Text, View } from 'react-native';
+import { AsyncStorage, ScrollView, StatusBar, Text, View, Image } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Carousel, { Pagination } from 'react-native-snap-carousel';
 import SliderEntry from './components/SliderEntry';
@@ -11,22 +11,70 @@ import SplashScreen from 'react-native-splash-screen';
 import {
   AdMobBanner,
 } from 'react-native-admob';
+import AppIntroSlider from 'react-native-app-intro-slider';
 
-const IS_ANDROID = Platform.OS === 'android';
 const SLIDER_1_FIRST_ITEM = 1;
+const slides = [
+  {
+    key: 1,
+    title: 'Get inspired!',
+    text: 'Daily insights from the ancient wisdom of Tarot to get the best out of your day.',
+    colors: ['#63E2FF', '#B066FE'],
+  },
+  {
+    key: 2,
+    title: 'Daily destiny!',
+    text: 'Get the gist of your surroundings and powers that help or hurt you.',
+    colors: ['#A3A1FF', '#3A3897'],
+  },
+  {
+    key: 3,
+    title: 'Daily karma!',
+    text: 'Know what you can do to get on the right path.',
+    colors: ['#29ABE2', '#4F00BC'],
+  }
+];
 
 export default class MainScreen extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      slider1ActiveSlide: SLIDER_1_FIRST_ITEM
+      slider1ActiveSlide: SLIDER_1_FIRST_ITEM,
+      showApp: false
     };
   }
 
   static navigationOptions = {
     header: null
   };
+
+  _renderWelcomeScreen = (props) => (
+    <LinearGradient
+      style={[
+        styles.mainContent,
+        {
+          paddingTop: props.topSpacer,
+          paddingBottom: props.bottomSpacer,
+          width: props.width,
+          height: props.height,
+        },
+      ]}
+      colors={props.colors}
+      start={{ x: 0, y: 0.1 }}
+      end={{ x: 0.1, y: 1 }}
+    >
+      <View>
+        <Text style={styles.title}>{props.title}</Text>
+        <Text style={styles.text}>{props.text}</Text>
+      </View>
+    </LinearGradient>
+  );
+  _onWelcomeDone = () => {
+    AsyncStorage.setItem('hideWelcomeScreen', 'true').then(() => {
+      this.setState({showApp: true});
+    });
+  }
 
   _renderItemWithParallax({ item, index }, parallaxProps) {
     return (
@@ -39,7 +87,7 @@ export default class MainScreen extends Component {
     );
   }
 
-  mainExample(number, title) {
+  renderSlider(number, title) {
     const { slider1ActiveSlide } = this.state;
 
     return (
@@ -91,34 +139,47 @@ export default class MainScreen extends Component {
   }
 
   componentDidMount() {
-    SplashScreen.hide();
+    AsyncStorage.getItem('hideWelcomeScreen').then((hideWelcomeScreen) => {
+      if(hideWelcomeScreen === null){
+        SplashScreen.hide();
+      } else if(hideWelcomeScreen === 'true'){
+        this.setState({showApp: true}, () => {
+          SplashScreen.hide();
+        });
+      }
+    });
   }
 
   render() {
-    const example1 = this.mainExample('Daily Readings', 'Let the tarot cards guide you daily on Love, Career, Health and Family');
+    const carousel = this.renderSlider('Daily Tarot Readings', 'Let the tarot cards guide you daily. We reset the readings every midnight so you can start fresh each day.');
 
-    return (
-      <View style={styles.container}>
-        <StatusBar
-          translucent={true}
-          backgroundColor={'rgba(0, 0, 0, 0.3)'}
-          barStyle={'light-content'}
-        />
-        {this.gradient}
-        <ScrollView
-          style={styles.scrollview}
-          scrollEventThrottle={200}
-          contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-between' }}
-          directionalLockEnabled={true}
-        >
-          {example1}
-          <AdMobBanner
-            adSize="fullBanner"
-            adUnitID="ca-app-pub-3940256099942544/6300978111"
-            onAdFailedToLoad={error => alert(error)}
+    if (this.state.showApp) {
+      return (
+        <View style={styles.container}>
+          <StatusBar
+            translucent={true}
+            backgroundColor={'rgba(0, 0, 0, 0.3)'}
+            barStyle={'light-content'}
           />
-        </ScrollView>
-      </View>
-    );
+          {this.gradient}
+          <ScrollView
+            style={styles.scrollview}
+            scrollEventThrottle={200}
+            contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-between' }}
+            directionalLockEnabled={true}
+          >
+            {carousel}
+            <AdMobBanner
+              adSize="fullBanner"
+              adUnitID="ca-app-pub-3940256099942544/6300978111"
+            />
+          </ScrollView>
+        </View>
+      );
+    } else {
+      return (
+        <AppIntroSlider renderItem={this._renderWelcomeScreen} slides={slides} onDone={this._onWelcomeDone} />
+      );
+    }
   }
 }
