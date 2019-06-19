@@ -108,12 +108,12 @@ export default class MainScreen extends Component {
         <ScrollView
           style={styles.scrollview}
           scrollEventThrottle={200}
-          contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-evenly' }}
+          contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-between' }}
           directionalLockEnabled={true}
         >
           {example1}
           <AdMobBanner
-            adSize="banner"
+            adSize="fullBanner"
             adUnitID="ca-app-pub-3940256099942544/6300978111"
             onAdFailedToLoad={error => alert(error)}
           />
