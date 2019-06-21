@@ -12,6 +12,11 @@ export default StyleSheet.create({
         flex: 1,
         backgroundColor: colors.background1,
     },
+    wrapper: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
     gradient: {
         ...StyleSheet.absoluteFillObject
     },
@@ -69,8 +74,9 @@ export default StyleSheet.create({
         justifyContent: 'space-around',
     },
     image: {
-        width: 320,
-        height: 320,
+        width: 300,
+        height: 300,
+        alignSelf: 'center'
     },
     text: {
         color: 'rgba(255, 255, 255, 0.8)',
@@ -78,11 +84,21 @@ export default StyleSheet.create({
         textAlign: 'center',
         paddingHorizontal: 16,
     },
-    title: {
-        fontSize: 22,
+    welcomeTitle: {
+        fontSize: 25,
         color: 'white',
         backgroundColor: 'transparent',
         textAlign: 'center',
         marginBottom: 16,
+        fontFamily: 'bold',
     },
+    welcomeText: {
+        fontSize: 16,
+        color: 'white',
+        backgroundColor: 'transparent',
+        textAlign: 'center',
+        marginBottom: 16,
+        paddingHorizontal: 30,
+        fontFamily: 'regular',
+    }
 });

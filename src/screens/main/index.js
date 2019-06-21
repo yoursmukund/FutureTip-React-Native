@@ -16,22 +16,25 @@ import AppIntroSlider from 'react-native-app-intro-slider';
 const SLIDER_1_FIRST_ITEM = 1;
 const slides = [
   {
-    key: 1,
+    key: '1',
     title: 'Get inspired!',
     text: 'Daily insights from the ancient wisdom of Tarot to get the best out of your day.',
-    colors: ['#63E2FF', '#B066FE'],
+    colors: ['#081E40', '#84DEE1'],
+    source: require('../../assets/images/futuretip_get_inspired.png')
   },
   {
-    key: 2,
+    key: '2',
     title: 'Daily destiny!',
     text: 'Get the gist of your surroundings and powers that help or hurt you.',
     colors: ['#A3A1FF', '#3A3897'],
+    source: require('../../assets/images/futuretip_daily_destiny.png')
   },
   {
-    key: 3,
+    key: '3',
     title: 'Daily karma!',
     text: 'Know what you can do to get on the right path.',
     colors: ['#29ABE2', '#4F00BC'],
+    source: require('../../assets/images/futuretip_daily_karma.png')
   }
 ];
 
@@ -64,15 +67,16 @@ export default class MainScreen extends Component {
       start={{ x: 0, y: 0.1 }}
       end={{ x: 0.1, y: 1 }}
     >
-      <View>
-        <Text style={styles.title}>{props.title}</Text>
-        <Text style={styles.text}>{props.text}</Text>
+      <View style={styles.wrapper}>
+        <Image style={styles.image} source={props.source} resizeMethod="resize"></Image>
+        <Text style={styles.welcomeTitle}>{props.title}</Text>
+        <Text style={styles.welcomeText}>{props.text}</Text>
       </View>
     </LinearGradient>
   );
   _onWelcomeDone = () => {
     AsyncStorage.setItem('hideWelcomeScreen', 'true').then(() => {
-      this.setState({showApp: true});
+      this.setState({ showApp: true });
     });
   }
 
@@ -140,10 +144,10 @@ export default class MainScreen extends Component {
 
   componentDidMount() {
     AsyncStorage.getItem('hideWelcomeScreen').then((hideWelcomeScreen) => {
-      if(hideWelcomeScreen === null){
+      if (hideWelcomeScreen === null) {
         SplashScreen.hide();
-      } else if(hideWelcomeScreen === 'true'){
-        this.setState({showApp: true}, () => {
+      } else if (hideWelcomeScreen === 'true') {
+        this.setState({ showApp: true }, () => {
           SplashScreen.hide();
         });
       }
