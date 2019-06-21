@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet, Dimensions } from 'react-native';
-import { colors } from '../main/styles/index.style';
-
+import { Dimensions, StyleSheet, Text, View } from 'react-native';
 ReadingText = (props) => {
   let { titles, subtitles, readingText } = props;
   return (
@@ -13,11 +11,13 @@ ReadingText = (props) => {
     </View>
   )
 }
+
 export default class ReadingView extends Component {
 
   constructor(props) {
     super(props);
   }
+  
   render() {
     let { karma, destiny } = this.props.cardDetails;
     return (

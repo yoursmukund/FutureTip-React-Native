@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { AsyncStorage, Image, StyleSheet, Text, View, Animated, StatusBar, ScrollView, Dimensions } from 'react-native';
+import { AsyncStorage, Image, StyleSheet, Text, View, Animated, StatusBar, ScrollView, Dimensions, BackHandler } from 'react-native';
 import FlipCard from 'react-native-flip-card';
 import data from '../../data/data';
 import ReadingView from './ReadingView';
 import style, { colors } from '../main/styles/index.style';
 import LinearGradient from 'react-native-linear-gradient';
+import { AdMobInterstitial } from 'react-native-admob';
 
 CardImage = (props) => {
   let { back, state } = props;
@@ -49,7 +50,26 @@ export default class ReadingScreen extends Component {
 
     this.getReading = this.getReading.bind(this);
     this.saveReading = this.saveReading.bind(this);
+    this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
     this.cards = Object.keys(data);
+  }
+
+  componentWillMount() {
+    BackHandler.addEventListener('hardwareBackPress', this.handleBackButtonClick);
+  }
+
+  componentWillUnmount() {
+    BackHandler.removeEventListener('hardwareBackPress', this.handleBackButtonClick);
+  }
+
+  handleBackButtonClick() {
+    // Display an interstitial
+    AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/1033173712');
+    AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
+
+    //Go back
+    this.props.navigation.goBack(null);
+    return true;
   }
 
   get gradient() {
@@ -99,7 +119,7 @@ export default class ReadingScreen extends Component {
 
   render() {
     return (
-      <View style={{flex: 1}}>
+      <View style={{ flex: 1 }}>
         <StatusBar
           translucent={true}
           backgroundColor={'rgba(0, 0, 0, 0.3)'}
