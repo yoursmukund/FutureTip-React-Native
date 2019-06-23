@@ -1,6 +1,6 @@
 export default data = {
-	one_swords: {
-        image: require('../assets/images/one_swords.png'),
+	ace_of_swords: {
+        image: require('../assets/images/ace_of_swords.png'),
 		career: {
 			karma: 'Be open minded and expectant of new things starting up around you. Welcome new challenges and overcome them with confidence. There is nothing to fear if we take everything as an experience.',
 			destiny: 'Inception of a challenge. Good or bad surprises on the way'
@@ -19,8 +19,8 @@ export default data = {
 		}
 	},
 
-	one_wands: {
-        image: require('../assets/images/one_wands.png'),
+	ace_of_wands: {
+        image: require('../assets/images/ace_of_wands.png'),
 		career: {
 			karma: 'Your destiny and desire want you to find something you are passionate about. The inclination is there, the atmosphere is there, the karma is upto you. So go ahead and find that passion and set plans into motion.',
 			destiny: 'Inception of a passion, new journey'
@@ -39,8 +39,8 @@ export default data = {
 		}
 	},
 
-	one_cups: {
-        image: require('../assets/images/one_cups.png'),
+	ace_of_cups: {
+        image: require('../assets/images/ace_of_cups.png'),
 		career: {
 			karma: 'The universe is signalling towards a new love, a renewed interest in everyday things. It needs you to manifest positive energy towards everyone who you work with. Appreciate someone sincerely and be grateful for what you are doing',
 			destiny: 'New love becons'
@@ -59,8 +59,8 @@ export default data = {
 		}
 	},
 
-	one_pents: {
-        image: require('../assets/images/one_pents.png'),
+	ace_of_pentacles: {
+        image: require('../assets/images/ace_of_pentacles.png'),
 		career: {
 			karma: 'The universe allows improvements in all aspects of your existence. Take the opportunity and open your eyes to fruitful ventures and don not shy away from taking risk.',
 			destiny: 'New health, luck and prosperity, solid gains.'
@@ -78,8 +78,8 @@ export default data = {
 			destiny: 'New health, luck and prosperity, solid gains.'
 		}
 	},
-	two_swords: {
-        image: require('../assets/images/two_swords.png'),
+	two_of_swords: {
+        image: require('../assets/images/two_of_swords.png'),
 		career: {
 			karma: 'The surroundings are not very favorable of conclusions and incline more towards opposing ideas and incompletion of targets. Be prepared for delays and keep your eyes open to actions or decisions that may not turn out to be in your favor',
 			destiny: 'Duality or warring ideas'
@@ -98,8 +98,8 @@ export default data = {
 		}
 	},
 
-	two_wands: {
-        image: require('../assets/images/two_wands.png'),
+	two_of_wands: {
+        image: require('../assets/images/two_of_wands.png'),
 		career: {
 			karma: 'Both the outer world and your internal world are showing signs of lack of resolve and contentment. Time to leave some decisions behind for later and persue the ones on priority. Know that Rome was not built in a day. In order for you to move forward, you will have to let go of some conflict even if they are not resolved.',
 			destiny: 'Struggle of lesser potential, choice between personal world and the beyond'
@@ -118,8 +118,8 @@ export default data = {
 		}
 	},
 
-	two_cups: {
-        image: require('../assets/images/two_cups.png'),
+	two_of_cups: {
+        image: require('../assets/images/two_of_cups.png'),
 		career: {
 			karma: 'Good time to make new friends and keep up with the old ones. You never know which one might help you out when it comes to inspiration or opportunity. So take some time out to stay in touch.',
 			destiny: 'Unexpected meeting, friends/people coming together for exchange of ideas, opportunity and direction.'
@@ -138,8 +138,8 @@ export default data = {
 		}
 	},
 
-	two_pents: {
-        image: require('../assets/images/two_pents.png'),
+	two_of_pentacles: {
+        image: require('../assets/images/two_of_pentacles.png'),
 		career: {
 			karma: 'In these turbulent times, be patient and stoic. Divide the work to conquor it.',
 			destiny: 'Juggling finances, health, a very physical life'
@@ -157,8 +157,8 @@ export default data = {
 			destiny: 'Juggling family, finances, health, a very physical life'
 		}
 	},
-	three_swords: {
-        image: require('../assets/images/three_swords.png'),
+	three_of_swords: {
+        image: require('../assets/images/three_of_swords.png'),
 		career: {
 			karma: 'Adverse situations are clouding in. This is the time to be more positive. It is the time to show the outside world your resilience. Do not be bogged down by the negativity.',
 			destiny: 'Heartbreak, disappointment with closely held posessions'
@@ -177,8 +177,8 @@ export default data = {
 		}
 	},
 
-	three_wands: {
-        image: require('../assets/images/three_wands.png'),
+	three_of_wands: {
+        image: require('../assets/images/three_of_wands.png'),
 		career: {
 			karma: 'Your decisions matter a lot. Your choices matter a lot. Do not go blindly into areas that concern you. Look at things from more angles instead of turning a blind eye',
 			destiny: 'Journey reaching a point where there is no turning back.'
@@ -197,8 +197,8 @@ export default data = {
 		}
 	},
 
-	three_cups: {
-        image: require('../assets/images/three_cups.png'),
+	three_of_cups: {
+        image: require('../assets/images/three_of_cups.png'),
 		career: {
 			karma: 'Time is conductive for starting a new project or money making operation. Be grateful for where you are. Take pleasure in simple accomplishments and try to enjoy the process and the hard work.',
 			destiny: 'Celebration, new passion, beginnings'
@@ -217,8 +217,8 @@ export default data = {
 		}
 	},
 
-	three_pents: {
-        image: require('../assets/images/three_pents.png'),
+	three_of_pentacles: {
+        image: require('../assets/images/three_of_pentacles.png'),
 		career: {
 			karma: 'Grab opportunities, see your current role with different perspectives and seek new ideas. Where there is will, money will follow',
 			destiny: 'Possibility of rewards, new beginnings in action for career, physical world'
@@ -236,8 +236,8 @@ export default data = {
 			destiny: 'Possibility of rewards, new beginnings in action for family, physical world'
 		}
 	},
-	four_swords: {
-        image: require('../assets/images/four_swords.png'),
+	four_of_swords: {
+        image: require('../assets/images/four_of_swords.png'),
 		career: {
 			karma: 'Be cautious of procrastination and wilful delay in actions. Take your time to step away to a calmer place but with a conviction to come back stronger and more prepared',
 			destiny: 'Reflection upon what truly matters, stepping away from the actions and relaxing, refocusing'
@@ -256,8 +256,8 @@ export default data = {
 		}
 	},
 
-	four_wands: {
-        image: require('../assets/images/four_wands.png'),
+	four_of_wands: {
+        image: require('../assets/images/four_of_wands.png'),
 		career: {
 			karma: 'Remember the task is not yet finished. Try not to leave it behind, swept away by any distraction. It is your time to focus and also enjoy in moderation at the same time.',
 			destiny: 'Minor celebration, success but with further work to be done'
@@ -276,8 +276,8 @@ export default data = {
 		}
 	},
 
-	four_cups: {
-        image: require('../assets/images/four_cups.png'),
+	four_of_cups: {
+        image: require('../assets/images/four_of_cups.png'),
 		career: {
 			karma: 'Realize the gifts you have which you often ignore, try to learn new things or change to a stream you love to bring back the excitement.',
 			destiny: 'Career stagnation and saturation, lack of motivation, dissatisfaction with people and job'
@@ -296,8 +296,8 @@ export default data = {
 		}
 	},
 
-	four_pents: {
-        image: require('../assets/images/four_pents.png'),
+	four_of_pentacles: {
+        image: require('../assets/images/four_of_pentacles.png'),
 		career: {
 			karma: 'Have a good control over your finances. Learn to be generous with money.',
 			destiny: 'Order, structure, control, power, Holding on too tight to money, frugality turning into stinginess'
@@ -315,8 +315,8 @@ export default data = {
 			destiny: 'Order, structure, control, power'
 		}
 	},
-	five_swords: {
-        image: require('../assets/images/five_swords.png'),
+	five_of_swords: {
+        image: require('../assets/images/five_of_swords.png'),
 		career: {
 			karma: 'Try not to take your life matters for granted. Go deeper. Try not to be always sure as you may be missing what is important.',
 			destiny: 'A teaching on overconfidence'
@@ -335,8 +335,8 @@ export default data = {
 		}
 	},
 
-	five_wands: {
-        image: require('../assets/images/five_wands.png'),
+	five_of_wands: {
+        image: require('../assets/images/five_of_wands.png'),
 		career: {
 			karma: 'Competition is tough. Try not to underestimate anybody. It is time to rise and focus only on yourself in order to do good.',
 			destiny: 'Mock fight that will teach a lesson, quest of achievement between people of equal footing'
@@ -355,8 +355,8 @@ export default data = {
 		}
 	},
 
-	five_cups: {
-        image: require('../assets/images/five_cups.png'),
+	five_of_cups: {
+        image: require('../assets/images/five_of_cups.png'),
 		career: {
 			karma: 'Be hopeful and grateful. Opportunities will come but you have to learn your lessons. Try not to waste time worrying about the past and move forward, learning from the mistakes and being grateful for what you have.',
 			destiny: 'Crying over losses and not realizing the passions still in possession. Lesson over taking emotions for granted.'
@@ -375,8 +375,8 @@ export default data = {
 		}
 	},
 
-	five_pents: {
-        image: require('../assets/images/five_pents.png'),
+	five_of_pentacles: {
+        image: require('../assets/images/five_of_pentacles.png'),
 		career: {
 			karma: 'Be cautious of overspending or risky investments. Find refuge in family and togetherness instead of seeking monetary satisfaction.',
 			destiny: 'A disappointment gives teaching. Health and money pose problems'
@@ -394,8 +394,8 @@ export default data = {
 			destiny: 'A disappointment gives teaching. Health and money issues arise or continue.'
 		}
 	},
-	six_swords: {
-        image: require('../assets/images/six_swords.png'),
+	six_of_swords: {
+        image: require('../assets/images/six_of_swords.png'),
 		career: {
 			karma: 'Have patience. Important and well thought out, gradual steps towards the solution will show result eventually.',
 			destiny: 'In mid of a voyage and not yet arrived at solution. The challenges are with you but they are on the way to finding a solution. Counselling helps.'
@@ -414,8 +414,8 @@ export default data = {
 		}
 	},
 
-	six_wands: {
-        image: require('../assets/images/six_wands.png'),
+	six_of_wands: {
+        image: require('../assets/images/six_of_wands.png'),
 		career: {
 			karma: 'The boat is moving towards calmer waters but it is still you who is rowing it. The worst is over but the work is not.',
 			destiny: 'Triumphant arrival and better days ahead. Adoration. Illusory pomp. Savor the moment but Try not to forget the work.'
@@ -434,8 +434,8 @@ export default data = {
 		}
 	},
 
-	six_cups: {
-        image: require('../assets/images/six_cups.png'),
+	six_of_cups: {
+        image: require('../assets/images/six_of_cups.png'),
 		career: {
 			karma: 'Catch up with people in workplace and it will bring up mutual love.',
 			destiny: 'Memories of good times, nostalgia, Stengthening bond and peace with the coworkers or friends who have worked with you in the past. '
@@ -454,8 +454,8 @@ export default data = {
 		}
 	},
 
-	six_pents: {
-        image: require('../assets/images/six_pents.png'),
+	six_of_pentacles: {
+        image: require('../assets/images/six_of_pentacles.png'),
 		career: {
 			karma: 'You have a lot and not many are so lucky. Give  to the poor. This gesture will add points to your karma and open the doors for rewards in places you have not imagined.',
 			destiny: 'Generosity of giving and joy of receiving '
@@ -473,8 +473,8 @@ export default data = {
 			destiny: 'Generosity of giving and joy of receiving.'
 		}
 	},
-	seven_swords: {
-        image: require('../assets/images/seven_swords.png'),
+	seven_of_swords: {
+        image: require('../assets/images/seven_of_swords.png'),
 		career: {
 			karma: 'Be aware of people playing the game and using you as a pawn or keeping you at a disadvantage for their gain. Keep an open eye for deceit',
 			destiny: 'Theft/loss of idea/power or protection of ideas/power in the light of impending trouble of opposite forces'
@@ -493,8 +493,8 @@ export default data = {
 		}
 	},
 
-	seven_wands: {
-        image: require('../assets/images/seven_wands.png'),
+	seven_of_wands: {
+        image: require('../assets/images/seven_of_wands.png'),
 		career: {
 			karma: 'Times are testing your strength and determination. You need to stay away from ignorance and fear and tackle the issues head on.',
 			destiny: 'Adversities are presenting an opportunity to prove yourself. Standing ground and controlling overwhelming adverse forces'
@@ -513,8 +513,8 @@ export default data = {
 		}
 	},
 
-	seven_cups: {
-        image: require('../assets/images/seven_cups.png'),
+	seven_of_cups: {
+        image: require('../assets/images/seven_of_cups.png'),
 		career: {
 			karma: 'Stay away from jealosy, pretense and confusion. Be sure of what you want and need. Seek advice from the one you trust.',
 			destiny: 'Conflict in thoughts and emotions or choices to be made. Mystery, lack of direction. '
@@ -533,8 +533,8 @@ export default data = {
 		}
 	},
 
-	seven_pents: {
-        image: require('../assets/images/seven_pents.png'),
+	seven_of_pentacles: {
+        image: require('../assets/images/seven_of_pentacles.png'),
 		career: {
 			karma: 'Time to think. Take a look around and choose your efforts wisely. Not everything is worth the hard work. Try to love what you do if you cannot do what you love',
 			destiny: 'Harnessing of divergent/challenging conditions, dissatisfaction with the result of hard work, doubts, worry about money/physical well being'
@@ -552,8 +552,8 @@ export default data = {
 			destiny: 'Harnessing of divergent/challenging conditions, dissatisfaction with the result of hard work, doubts, worry about money/physical well being'
 		}
 	},
-	eight_swords: {
-        image: require('../assets/images/eight_swords.png'),
+	eight_of_swords: {
+        image: require('../assets/images/eight_of_swords.png'),
 		career: {
 			karma: 'We do feel trapped and isolated sometimes. The only way out is through determination and not through abandonement of the problems. Pray for strength to solve the problems, not for the problems to go away.',
 			destiny: 'Surrounded by problems, need the intelligence, guile and strength to move forward.'
@@ -572,8 +572,8 @@ export default data = {
 		}
 	},
 
-	eight_wands: {
-        image: require('../assets/images/eight_wands.png'),
+	eight_of_wands: {
+        image: require('../assets/images/eight_of_wands.png'),
 		career: {
 			karma: 'Build intelligence and strength to deal with unexpected events in this fast paced time. Be excited and go where the flow takes you, but exercise caution',
 			destiny: 'Exciting time to be experimenting. Situations are leaving you "no time" for yourself. Events are happening fast around you.'
@@ -592,8 +592,8 @@ export default data = {
 		}
 	},
 
-	eight_cups: {
-        image: require('../assets/images/eight_cups.png'),
+	eight_of_cups: {
+        image: require('../assets/images/eight_of_cups.png'),
 		career: {
 			karma: 'Gain emotional strength from focusing on what you are going to achieve rather than what you are leaving behind. Try not to succumb to the bad times as the sun rises every morning, and it gives you a chance to take away the darkness',
 			destiny: 'Leaving temptation/passion in a quest for something more. Needs emotional strength'
@@ -612,8 +612,8 @@ export default data = {
 		}
 	},
 
-	eight_pents: {
-        image: require('../assets/images/eight_pents.png'),
+	eight_of_pentacles: {
+        image: require('../assets/images/eight_of_pentacles.png'),
 		career: {
 			karma: 'Find time outside work to get away and relax. Life dominated by greed to succeed has its side effects. Spend more time in finding out what you love and trying to find out if you can make money out of it. This can bring a good balance to your perception of work and money.',
 			destiny: 'Hard work, Descipline, Consistency, Greed, Feeling of effort going in vain and less money for a lot of work.'
@@ -631,8 +631,8 @@ export default data = {
 			destiny: 'Hard work, Descipline, Consistency, Greed, Feeling of effort going in vain'
 		}
 	},
-	nine_swords: {
-        image: require('../assets/images/nine_swords.png'),
+	nine_of_swords: {
+        image: require('../assets/images/nine_of_swords.png'),
 		career: {
 			karma: 'This is a reminder to wake up. The negativity and depression in overanalysis of your past can lead to harmful consequences that stretch out to workplace and other avenues of life. Out of the darkest nights, comes the brightest of mornings. Have hope.',
 			destiny: 'Fears, despair, anxiety, worry about career and mistakes made'
@@ -651,8 +651,8 @@ export default data = {
 		}
 	},
 
-	nine_wands: {
-        image: require('../assets/images/nine_wands.png'),
+	nine_of_wands: {
+        image: require('../assets/images/nine_of_wands.png'),
 		career: {
 			karma: 'Patience is especially needed at this moment. Give the environment some time to loosen the deadlocks by itself. Practice detatchment from outcome.',
 			destiny: 'Delays, waiting, vigilance.'
@@ -671,8 +671,8 @@ export default data = {
 		}
 	},
 
-	nine_cups: {
-        image: require('../assets/images/nine_cups.png'),
+	nine_of_cups: {
+        image: require('../assets/images/nine_of_cups.png'),
 		career: {
 			karma: 'The universe is creating a moment of celebration.  A time to look back and feel good about where you are at the moment and to enjoy it. Be cautious of overindulgence in this merry land universe has created. Also be aware not to be too proud of your accomplishments.',
 			destiny: 'Victory, completion, satisfaction, creative energy, recognition'
@@ -691,8 +691,8 @@ export default data = {
 		}
 	},
 
-	nine_pents: {
-        image: require('../assets/images/nine_pents.png'),
+	nine_of_pentacles: {
+        image: require('../assets/images/nine_of_pentacles.png'),
 		career: {
 			karma: 'Be glad to have the luck and the pleasures that you have. Appreciate every bit of hard work you put in and the people who support you. Give back small tokens of appreciation to yourself and others in this small journey of life. ',
 			destiny: 'Luck, money, small indulgence as a token or a gift for hard work and achievement of goals'
@@ -710,8 +710,8 @@ export default data = {
 			destiny: 'Good fortune, indulgence, money'
 		}
 	},
-	ten_swords: {
-        image: require('../assets/images/ten_swords.png'),
+	ten_of_swords: {
+        image: require('../assets/images/ten_of_swords.png'),
 		career: {
 			karma: 'Need to look forward and not to cry over what is lost in the past. Change the method and approach the present with a new perspective.',
 			destiny: 'Death of idea/project, pain or loss from inaction or wasted action.'
@@ -730,8 +730,8 @@ export default data = {
 		}
 	},
 
-	ten_wands: {
-        image: require('../assets/images/ten_wands.png'),
+	ten_of_wands: {
+        image: require('../assets/images/ten_of_wands.png'),
 		career: {
 			karma: 'Time to leave the old burdens behind and pursue new ones. They would not come without their own burden but for a while, new beginnings will uplift the spirit.',
 			destiny: 'Burden of the work/past/ideas. Being stuck in a rut. '
@@ -750,8 +750,8 @@ export default data = {
 		}
 	},
 
-	ten_cups: {
-        image: require('../assets/images/ten_cups.png'),
+	ten_of_cups: {
+        image: require('../assets/images/ten_of_cups.png'),
 		career: {
 			karma: 'Enjoy your time. Leave your worries for a while and socialize. Make friends and spend time with close ones. A good time for reunions.',
 			destiny: 'Celebration and stability of home life, control and emotional maturity.'
@@ -770,8 +770,8 @@ export default data = {
 		}
 	},
 
-	ten_pents: {
-        image: require('../assets/images/ten_pents.png'),
+	ten_of_pentacles: {
+        image: require('../assets/images/ten_of_pentacles.png'),
 		career: {
 			karma: 'Enjoy your moments, Calm down and share your experience. Give back to charity and earn good luck for the new task ahead.',
 			destiny: 'Environment of completion. Things come full circle and bestow satisfaction and comfort.'
@@ -789,8 +789,8 @@ export default data = {
 			destiny: 'Resolution, finality, completion. Good relations and happy coexistence.'
 		}
 	},
-	page_swords: {
-        image: require('../assets/images/page_swords.png'),
+	page_of_swords: {
+        image: require('../assets/images/page_of_swords.png'),
 		career: {
 			karma: 'Perception is the key to analysing and succeeding in work environments but it does not protect you from making wrong judgement. Stay curious of new oppportunities and wary of mood swings of disinterest and overthinking',
 			destiny: 'Curiosity, alertness, exploring'
@@ -809,8 +809,8 @@ export default data = {
 		}
 	},
 
-	page_wands: {
-        image: require('../assets/images/page_wands.png'),
+	page_of_wands: {
+        image: require('../assets/images/page_of_wands.png'),
 		career: {
 			karma: 'Time to take risky steps and bold moves to help your career. Right energy and good mix of attitude can help pivot you to the right direction. Time to start following the heart.',
 			destiny: 'Travel, passion, career move, entering, willingness, energy, curiosity to explore new things.'
@@ -829,8 +829,8 @@ export default data = {
 		}
 	},
 
-	page_cups: {
-        image: require('../assets/images/page_cups.png'),
+	page_of_cups: {
+        image: require('../assets/images/page_of_cups.png'),
 		career: {
 			karma: 'Seek the unknown with happiness and generosity. New ideas and ways to improve upon your current state are right around the corner, go find them. Make a start.',
 			destiny: 'Fresh emotions, creativity, childlike, innocent kindness and empathy.'
@@ -849,8 +849,8 @@ export default data = {
 		}
 	},
 
-	page_pents: {
-        image: require('../assets/images/page_pents.png'),
+	page_of_pentacles: {
+        image: require('../assets/images/page_of_pentacles.png'),
 		career: {
 			karma: 'It is a good time to plan for future. Be receptive of the current opportunities, trends in investment and be inclined towards finding new ways to earn more through hard work.',
 			destiny: 'Opportunity in land/money, Serious instincts relating to money and future'
@@ -868,8 +868,8 @@ export default data = {
 			destiny: 'Good opportunities with money, plans for future'
 		}
 	},
-	knight_swords: {
-        image: require('../assets/images/knight_swords.png'),
+	knight_of_swords: {
+        image: require('../assets/images/knight_of_swords.png'),
 		career: {
 			karma: 'Calm down and realize that not everything needs to be solved today. Try not to make uninformed or ignorant decisions as they may land you in trouble.',
 			destiny: 'Conflicts, arrogance, haste, power, teen spirit too smart for it is own good, free speech'
@@ -888,8 +888,8 @@ export default data = {
 		}
 	},
 
-	knight_wands: {
-        image: require('../assets/images/knight_wands.png'),
+	knight_of_wands: {
+        image: require('../assets/images/knight_of_wands.png'),
 		career: {
 			karma: 'Be undeterred by the environment, stand your ground and have faith in your ideas',
 			destiny: 'Rapid changes, center of attention, headstrong man. '
@@ -908,8 +908,8 @@ export default data = {
 		}
 	},
 
-	knight_cups: {
-        image: require('../assets/images/knight_cups.png'),
+	knight_of_cups: {
+        image: require('../assets/images/knight_of_cups.png'),
 		career: {
 			karma: 'A victim of your own feelings, you are mystifying yourself, trying to create confusion instead of living in reality. You cannot escape the call of reality and over-sensitivity will not help.',
 			destiny: 'Young spirit with unique talent and generosity, lost in ambitions, escapism, addiction'
@@ -928,8 +928,8 @@ export default data = {
 		}
 	},
 
-	knight_pents: {
-        image: require('../assets/images/knight_pents.png'),
+	knight_of_pentacles: {
+        image: require('../assets/images/knight_of_pentacles.png'),
 		career: {
 			karma: 'Take your time and be patient and wise with your career choices but also know that life is what happens when we are busy making plans. Avoid overthinking.',
 			destiny: 'Slow, cautious, protective, less inclined to take action hastily, pragmatic youth, thought out plan, materialistic, serious.'
@@ -947,8 +947,8 @@ export default data = {
 			destiny: 'Slow, cautious, protective, less inclined to take action hastily, pragmatic youth, thought out plan, materialistic, serious'
 		}
 	},
-	queen_swords: {
-        image: require('../assets/images/queen_swords.png'),
+	queen_of_swords: {
+        image: require('../assets/images/queen_of_swords.png'),
 		career: {
 			karma: 'Leave the past behind. There is nothing to hold on to except learning and the present action at hand. The environment guides you to get up and take firm resolve.',
 			destiny: 'Disappointment in the past, firm and less nurturing environment in career'
@@ -967,8 +967,8 @@ export default data = {
 		}
 	},
 
-	queen_wands: {
-        image: require('../assets/images/queen_wands.png'),
+	queen_of_wands: {
+        image: require('../assets/images/queen_of_wands.png'),
 		career: {
 			karma: 'Leading an active and busy life, you are capable of great creative vision and possess leadership qualities. Express your passions with courage and truthfulness. Those who say what they want, get what they want.',
 			destiny: 'Softer and gentler, development of journey, nurturing of ideas, over sensitive, honorable, social'
@@ -987,8 +987,8 @@ export default data = {
 		}
 	},
 
-	queen_cups: {
-        image: require('../assets/images/queen_cups.png'),
+	queen_of_cups: {
+        image: require('../assets/images/queen_of_cups.png'),
 		career: {
 			karma: 'you are caring but expect a lot in return and when you Try not to get it, all the moodiness and depression shows up. This repeats in a cycle. Realize that universe is not always bidirectional and not all the things you do have to have emotions attached to them. Be more practical and grow thick skin as it is important to skip over disappointments and be afloat no matter what.',
 			destiny: 'Quiet, spiritual, emotional support, moodiness, depression, self reflection, caring'
@@ -1007,8 +1007,8 @@ export default data = {
 		}
 	},
 
-	queen_pents: {
-        image: require('../assets/images/queen_pents.png'),
+	queen_of_pentacles: {
+        image: require('../assets/images/queen_of_pentacles.png'),
 		career: {
 			karma: 'Opportunity to create a warm and homely environment at workplace. You need to create better balance in your life. You have the potential to do it and the time is now.',
 			destiny: 'Excels in mundane life, thankful for her earthy possessions, modest success, care, hardworking, nature loving, traditional '
@@ -1026,8 +1026,8 @@ export default data = {
 			destiny: 'Excels in mundane life, thankful for her earthy possessions, modest success, care, hardworking, nature loving, traditional'
 		}
 	},
-	king_swords: {
-        image: require('../assets/images/king_swords.png'),
+	king_of_swords: {
+        image: require('../assets/images/king_of_swords.png'),
 		career: {
 			karma: 'If you work hard and are truthful to yourself and others, the environment will spare you, else it will bring you to justice. Just remember to stick with the truth.',
 			destiny: 'Judge, fair, man of ideas, cold, distant, harsh, cruel. Survival of the fittest'
@@ -1046,8 +1046,8 @@ export default data = {
 		}
 	},
 
-	king_wands: {
-        image: require('../assets/images/king_wands.png'),
+	king_of_wands: {
+        image: require('../assets/images/king_of_wands.png'),
 		career: {
 			karma: 'Time to solidify the ideas from within and embark on a new journey. Time for a new beginning. You need to keep the doubts away now and move forward, the first step is the hardest',
 			destiny: 'Noble man, start of something new, teacher role, charismatic. '
@@ -1066,8 +1066,8 @@ export default data = {
 		}
 	},
 
-	king_cups: {
-        image: require('../assets/images/king_cups.png'),
+	king_of_cups: {
+        image: require('../assets/images/king_of_cups.png'),
 		career: {
 			karma: 'The combination of hard work and empathy can bring you great success. Practice those traits more for better results.',
 			destiny: 'Struggles but still holds his ground, ideal, loving, supporting father spirit, emotional stability, understandability'
@@ -1086,8 +1086,8 @@ export default data = {
 		}
 	},
 
-	king_pents: {
-        image: require('../assets/images/king_pents.png'),
+	king_of_pentacles: {
+        image: require('../assets/images/king_of_pentacles.png'),
 		career: {
 			karma: 'The combination of hard work and empathy can bring you great success. Practice those traits more for better results.',
 			destiny: 'Proud, confident, hard worker, inspires hard work and cautiousness, charming, depth of experience'
@@ -1105,8 +1105,8 @@ export default data = {
 			destiny: 'Proud, confident, hard worker, inspires hard work and cautiousness, charming, depth of experience'
 		}
 	},
-	magician: {
-        image: require('../assets/images/magician.png'),
+	the_magician: {
+        image: require('../assets/images/the_magician.png'),
 		career: {
 			karma: 'Try to find new ways of doing things and take lessons from the past. If there is time for new ideas to take shape, it is now.',
 			destiny: 'Time for new ideas to take shape. Inspiration can come from anywhere'

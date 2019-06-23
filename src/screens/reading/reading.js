@@ -130,7 +130,7 @@ export default class ReadingScreen extends Component {
           contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-evenly', alignItems: 'center' }}>
           <View style={styles.wrapper}>
             {!this.state.readingVisible ? <Text style={styles.relaxText}>Focus, relax and pick the card below</Text> : null}
-            {this.state.readingVisible ? <Text style={styles.cardName}>{this.state.cardDetails.cardName.replace('_', ' ').toUpperCase()}</Text> : null}
+            {this.state.readingVisible ? <Text style={styles.cardName}>{this.state.cardDetails.cardName.replace(/_/g, " ").toUpperCase()}</Text> : null}
             <FlipCard
               style={styles.flipCard}
               flipHorizontal={true}
