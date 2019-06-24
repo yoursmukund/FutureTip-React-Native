@@ -141,19 +141,19 @@ export default data = {
 	two_of_pentacles: {
         image: require('../assets/images/two_of_pentacles.png'),
 		career: {
-			karma: 'In these turbulent times, be patient and stoic. Divide the work to conquor it.',
+			karma: 'In these turbulent times, be patient and stoic. Divide the work to conquor it. Try not to waste your time contemplating without conclusion.',
 			destiny: 'Juggling finances, health, a very physical life'
 		},
 		love: {
-			karma: 'In these turbulent times, be patient and stoic and keep the loved ones close.',
+			karma: 'In these turbulent times, be patient and stoic and keep the loved ones close. Try not to waste your time contemplating without conclusion.',
 			destiny: 'Juggling love, finances, health, a very physical life'
 		},
 		health: {
-			karma: 'In these turbulent times, be patient and stoic and concentrate on having positive attitude.',
+			karma: 'In these turbulent times, be patient and stoic and concentrate on having positive attitude. Try not to waste your time contemplating without conclusion.',
 			destiny: 'Juggling health, finances, a very physical life'
 		},
 		family: {
-			karma: 'In these turbulent times, be patient and stoic and keep the loved ones close.',
+			karma: 'In these turbulent times, be patient and stoic and keep the loved ones close. Try not to waste your time contemplating without conclusion.',
 			destiny: 'Juggling family, finances, health, a very physical life'
 		}
 	},
@@ -220,19 +220,19 @@ export default data = {
 	three_of_pentacles: {
         image: require('../assets/images/three_of_pentacles.png'),
 		career: {
-			karma: 'Grab opportunities, see your current role with different perspectives and seek new ideas. Where there is will, money will follow',
+			karma: 'Grab opportunities, see your current role with different perspectives and seek new ideas. Where there is will, money will follow. Hard work and constant efforts towards a concentrated goal will bring great results.',
 			destiny: 'Possibility of rewards, new beginnings in action for career, physical world'
 		},
 		love: {
-			karma: 'Find new ways to experiment with love life, there are rewards waiting for your efforts.',
+			karma: 'Find new ways to experiment with love life, there are rewards waiting for your efforts. Hard work and constant efforts towards a concentrated goal will bring great results.',
 			destiny: 'Possibility of rewards, new beginnings in action for love, physical world'
 		},
 		health: {
-			karma: 'Embrace new ways to improve health. Based on your efforts, rewards will be quick to come.',
+			karma: 'Embrace new ways to improve health. Based on your efforts, rewards will be quick to come. Hard work and constant efforts towards a concentrated goal will bring great results.',
 			destiny: 'Possibility of rewards, new beginnings in action for health, physical world'
 		},
 		family: {
-			karma: 'Blessings from family can help change your time, bring about new beginnings and pleasant surprises. ',
+			karma: 'Blessings from family can help change your time, bring about new beginnings and pleasant surprises. Hard work and constant efforts towards a concentrated goal will bring great results.',
 			destiny: 'Possibility of rewards, new beginnings in action for family, physical world'
 		}
 	},
@@ -279,19 +279,19 @@ export default data = {
 	four_of_cups: {
         image: require('../assets/images/four_of_cups.png'),
 		career: {
-			karma: 'Realize the gifts you have which you often ignore, try to learn new things or change to a stream you love to bring back the excitement.',
+			karma: 'Realize the gifts you have which you often ignore, try to learn new things or change to a stream you love to bring back the excitement. Passion is the key to reach where you want to be',
 			destiny: 'Career stagnation and saturation, lack of motivation, dissatisfaction with people and job'
 		},
 		love: {
-			karma: 'Realize your blessings, make your partner/yourself happy by changing your attitude, Compromise a little and be grateful.',
+			karma: 'Realize your blessings, make your partner/yourself happy by changing your attitude towards things you do not want to talk about. A little compromise goes a long way.',
 			destiny: 'Dissatisfaction/saturation with love, lack of passion and happiness, a state of not being given what you asked for'
 		},
 		health: {
-			karma: 'Realize your blessings, be grateful to be alive, things wont change unless you change them so get up',
+			karma: 'Realize your blessings, be grateful to be alive, things wont change unless you change them so get up. Passion is the key to reach where you want to be',
 			destiny: 'Dissatisfaction with health, lack of motivation, unwillingness to make a change'
 		},
 		family: {
-			karma: 'Realize your blessings, make your family/yourself happy by changing your attitude, Compromise a little and be grateful.',
+			karma: 'Realize your blessings, make your family/yourself happy by changing your attitude towards things you do not want to address, Compromise a little and be grateful. A little compromise goes a long way.',
 			destiny: 'Dissatisfaction with family, lack of passion and happiness, a state of not being given what you asked for'
 		}
 	},
@@ -299,38 +299,38 @@ export default data = {
 	four_of_pentacles: {
         image: require('../assets/images/four_of_pentacles.png'),
 		career: {
-			karma: 'Have a good control over your finances. Learn to be generous with money.',
-			destiny: 'Order, structure, control, power, Holding on too tight to money, frugality turning into stinginess'
+			karma: 'Having a good control over your finances and practicing generocity on occassions you feel grateful can help you open the door to a better life.',
+			destiny: 'Order, structure, control, power, Holding on too tight to money, frugality turning into stinginess.'
 		},
 		love: {
 			karma: 'Relationship can become a struggle for control and importance. Try not to let it happen. Practise generosity. Give space to loved ones and let them exercise their control too.',
-			destiny: 'Order, structure, control, power'
+			destiny: 'Order, structure, control.'
 		},
 		health: {
-			karma: 'Practise generosity and relinquishing control. This will ease up a lot of mental and physical pressure in life.',
+			karma: 'Practise generosity and relinquishing control. This will ease up a lot of mental and physical pressure in life and allow you to open the door for mindfullness',
 			destiny: 'Order, structure, control, power, Holding on too tight to money, frugality turning into stinginess'
 		},
 		family: {
 			karma: 'Family situation can become a struggle for control and importance. Try not to let it happen. Practise generosity. Give space to loved ones and let them exercise their control too.',
-			destiny: 'Order, structure, control, power'
+			destiny: 'Order, structure, control in relationships.'
 		}
 	},
 	five_of_swords: {
         image: require('../assets/images/five_of_swords.png'),
 		career: {
-			karma: 'Try not to take your life matters for granted. Go deeper. Try not to be always sure as you may be missing what is important.',
+			karma: 'Try not to take your life matters for granted. Sometimes things are not as they seem. Go deeper. Try not to be always sure as you may be missing what is important.',
 			destiny: 'A teaching on overconfidence'
 		},
 		love: {
-			karma: 'Try not to take your life matters for granted. Go deeper. Try not to be always sure as you may be missing what is important.',
+			karma: 'Try not to take your life matters for granted. Sometimes things are not as they seem. Go deeper. Try not to be always sure as you may be missing what is important.',
 			destiny: 'A teaching on overconfidence'
 		},
 		health: {
-			karma: 'Try not to take your life matters for granted. Go deeper. Try not to be always sure as you may be missing what is important.',
+			karma: 'Try not to take your life matters for granted. Sometimes things are not as they seem. Go deeper. Try not to be always sure as you may be missing what is important.',
 			destiny: 'A teaching on overconfidence'
 		},
 		family: {
-			karma: 'Try not to take your life matters for granted. Go deeper. Try not to be always sure as you may be missing what is important.',
+			karma: 'Try not to take your life matters for granted. Sometimes things are not as they seem. Go deeper. Try not to be always sure as you may be missing what is important.',
 			destiny: 'A teaching on overconfidence'
 		}
 	},
@@ -338,20 +338,20 @@ export default data = {
 	five_of_wands: {
         image: require('../assets/images/five_of_wands.png'),
 		career: {
-			karma: 'Competition is tough. Try not to underestimate anybody. It is time to rise and focus only on yourself in order to do good.',
-			destiny: 'Mock fight that will teach a lesson, quest of achievement between people of equal footing'
+			karma: 'Competition is tough. Try not to underestimate anybody. It is time to rise and focus only on yourself in order to do good with the task at hand.',
+			destiny: 'Conflict that will teach a lesson, quest of achievement between people of equal footing'
 		},
 		love: {
 			karma: 'Money matters, underappreciation of your partner/loved one can turn happy relationships sour. Work towards meeting in the middle and dousing the inequality and misunderstandings',
-			destiny: 'Mock fight that will teach a lesson, quest of achievement between people of equal footing'
+			destiny: 'Conflict that will teach a lesson, quest of achievement between people of equal footing'
 		},
 		health: {
 			karma: 'Money matters, bad health and working against your own desires can turn happy times sour. Stay vigilant of health concerns and avoid unwanted confrontations.',
-			destiny: 'Mock fight that will teach a lesson, quest of achievement between people of equal footing'
+			destiny: 'Conflict that will teach a lesson, quest of achievement between people of equal footing'
 		},
 		family: {
 			karma: 'Money matters, underappreciation of your family can turn happy relationships sour. Work towards meeting in the middle and dousing the inequality and difference of opinion.',
-			destiny: 'Mock fight that will teach a lesson, quest of achievement between people of equal footing'
+			destiny: 'Conflict that will teach a lesson, quest of achievement between people of equal footing'
 		}
 	},
 
@@ -378,34 +378,34 @@ export default data = {
 	five_of_pentacles: {
         image: require('../assets/images/five_of_pentacles.png'),
 		career: {
-			karma: 'Be cautious of overspending or risky investments. Find refuge in family and togetherness instead of seeking monetary satisfaction.',
-			destiny: 'A disappointment gives teaching. Health and money pose problems'
+			karma: 'Be cautious of overspending or risky investments. Find refuge in family and togetherness instead of seeking monetary satisfaction. This will help you resolve disappointments and move on with life',
+			destiny: 'A disappointment gives teaching. Health and money can pose problems'
 		},
 		love: {
-			karma: 'Seek comfort from all the problems in togetherness. Focus on relationships/friendships as they can act as a refuge from the problems',
-			destiny: 'A disappointment gives teaching. Health and money pose problems'
+			karma: 'Seek comfort from all the problems in togetherness. Focus on relationships/friendships as they can act as a refuge from the problems. This will help you resolve disappointments and move on with life',
+			destiny: 'A disappointment gives teaching. Health and money can pose problems'
 		},
 		health: {
-			karma: 'Seek comfort in loved ones. Keep caring people close.',
+			karma: 'Seek comfort in loved ones. Keep the people who are care about you, closer. This will help you resolve disappointments and move on with life',
 			destiny: 'A disappointment gives teaching. Health and money issues arise or continue.'
 		},
 		family: {
-			karma: 'Family is the ultimate savior. Keep close with loved ones and seek their help to heal. Find comfort in togetherness.',
+			karma: 'Family is the ultimate savior. Keep close with loved ones and seek their help to heal. Find comfort in togetherness. This will help you resolve disappointments and move on with life',
 			destiny: 'A disappointment gives teaching. Health and money issues arise or continue.'
 		}
 	},
 	six_of_swords: {
         image: require('../assets/images/six_of_swords.png'),
 		career: {
-			karma: 'Have patience. Important and well thought out, gradual steps towards the solution will show result eventually.',
-			destiny: 'In mid of a voyage and not yet arrived at solution. The challenges are with you but they are on the way to finding a solution. Counselling helps.'
+			karma: 'Have patience. Important and well thought out, gradual steps towards the solution will show result eventually. It is not a time to take quick steps as they might be caused by impatience.',
+			destiny: 'In mid of a voyage and not yet arrived at solution. Impatience related to unfinished business is the dominating feeling.'
 		},
 		love: {
 			karma: 'Practice patience, harmony and sympathy when it comes to relationships. The issues may not be looking like they have resolved, but with right attitude, it is only a matter of time before they do. Seek trusted counselling from a friend.',
 			destiny: 'In mid of a voyage and not yet arrived at solution. The challenges are with you but they are on the way to finding a solution'
 		},
 		health: {
-			karma: 'Have patience. Important steps towards the solution to health problems will show result eventually.',
+			karma: 'Have patience. Important steps towards the solution to health problems will show result eventually. It is not a time to take quick steps as they might be caused by impatience.',
 			destiny: 'In mid of a voyage and not yet arrived at solution. The challenges are with you but they are on the way to finding a solution. Counselling helps'
 		},
 		family: {
@@ -417,39 +417,39 @@ export default data = {
 	six_of_wands: {
         image: require('../assets/images/six_of_wands.png'),
 		career: {
-			karma: 'The boat is moving towards calmer waters but it is still you who is rowing it. The worst is over but the work is not.',
-			destiny: 'Triumphant arrival and better days ahead. Adoration. Illusory pomp. Savor the moment but Try not to forget the work.'
+			karma: 'Your boat is moving towards calmer waters and there is a sense of victory in the air. It is a test. You need to see the uncomfortable truth. The worst is over but the work is not.',
+			destiny: 'Triumphant arrival and better days ahead. Adoration. Illusory pomp'
 		},
 		love: {
-			karma: 'The boat is moving towards calmer waters but it is still you who is rowing it. The worst is over but the work is not. Try not to forget to learn from your mistakes.',
-			destiny: 'Triumphant arrival and better days ahead. Adoration. Illusory pomp. Savor the moment but Try not to forget the work.'
+			karma: 'Your boat is moving towards calmer waters and there is a sense of victory in the air. It is a test. You need to see the uncomfortable truth. The worst is over but the work is not.',
+			destiny: 'Triumphant arrival and better days ahead. Adoration. Illusory pomp.'
 		},
 		health: {
-			karma: 'The boat is moving towards calmer waters but it is still you who is rowing it. The worst is over but the work is not. Try not to forget to learn from your mistakes.',
-			destiny: 'Triumphant arrival and better days ahead. Adoration. Illusory pomp. Savor the moment but Try not to forget the work.'
+			karma: 'Your boat is moving towards calmer waters and there is a sense of victory in the air. It is a test. You need to see the uncomfortable truth. The worst is over but the work is not.',
+			destiny: 'Triumphant arrival and better days ahead. Adoration. Illusory pomp.'
 		},
 		family: {
-			karma: 'The boat is moving towards calmer waters but it is still you who is rowing it. The worst is over but the work is not.',
-			destiny: 'Triumphant arrival and better days ahead. Adoration. Illusory pomp. Savor the moment but Try not to forget the work'
+			karma: 'Your boat is moving towards calmer waters and there is a sense of victory in the air. It is a test. You need to see the uncomfortable truth. The worst is over but the work is not.',
+			destiny: 'Triumphant arrival and better days ahead. Adoration. Illusory pomp.'
 		}
 	},
 
 	six_of_cups: {
         image: require('../assets/images/six_of_cups.png'),
 		career: {
-			karma: 'Catch up with people in workplace and it will bring up mutual love.',
+			karma: 'Catch up with people in workplace and it will enrich mutual respect and coordination. The times make it easier to make up with people who do not get along well with you',
 			destiny: 'Memories of good times, nostalgia, Stengthening bond and peace with the coworkers or friends who have worked with you in the past. '
 		},
 		love: {
-			karma: 'Catch up with good old memories but be careful of not going down the bad memories.',
+			karma: 'Catch up with good old memories. Time to relax and smell the roses. Go down memory lane and remind your loved ones of those good moments.',
 			destiny: 'Memories of good times, nostalgia. A good time to make peace and amends in friendship or relationship'
 		},
 		health: {
-			karma: 'Be careful of not going down the bad memories instead of good ones as that can affect health',
+			karma: 'The past is a great treasure trove. Memories, teachings all reside there. Time to reckon your good ones.',
 			destiny: 'Heightened emotions, nostalgia and lot of memories.'
 		},
 		family: {
-			karma: 'Catch up with friends and family and be careful of not going down the bad memories.',
+			karma: 'Catch up with good old memories. Time to relax and smell the roses. Go down memory lane and remind your loved ones of those good moments.',
 			destiny: 'Pleasures of the past, an emotional, nostalgic time'
 		}
 	},
@@ -457,15 +457,15 @@ export default data = {
 	six_of_pentacles: {
         image: require('../assets/images/six_of_pentacles.png'),
 		career: {
-			karma: 'You have a lot and not many are so lucky. Give  to the poor. This gesture will add points to your karma and open the doors for rewards in places you have not imagined.',
+			karma: 'You have a lot and not many are so lucky. Give alms to the poor. This gesture will add points to your karma and open the doors for rewards in places you have not imagined.',
 			destiny: 'Generosity of giving and joy of receiving '
 		},
 		love: {
-			karma: 'A time to come together and settle the differences with the loved ones. Give out gifts. This gesture will add points to your karma and open the doors for rewards in places you have not imagined.',
+			karma: 'A time to come together and settle the differences with the loved ones. Give out gifts to people you love and those in need. This gesture will add points to your karma and open the doors for rewards in places you have not imagined.',
 			destiny: 'Generosity of giving and joy of receiving '
 		},
 		health: {
-			karma: 'Be thankful for whatever health you have, not many are so lucky.  Give  to the poor. This gesture will add points to your karma and open the doors for rewards in places you have not imagined.',
+			karma: 'Be thankful for whatever health you have, not many are so lucky. Give alms to the poor. This gesture will add points to your karma and open the doors for rewards in places you have not imagined.',
 			destiny: 'Generosity of giving and joy of receiving'
 		},
 		family: {
@@ -477,19 +477,19 @@ export default data = {
         image: require('../assets/images/seven_of_swords.png'),
 		career: {
 			karma: 'Be aware of people playing the game and using you as a pawn or keeping you at a disadvantage for their gain. Keep an open eye for deceit',
-			destiny: 'Theft/loss of idea/power or protection of ideas/power in the light of impending trouble of opposite forces'
+			destiny: 'Protection of ideas/power in the light of impending trouble'
 		},
 		love: {
 			karma: 'Be aware of manipulation and deceit. Try not to build distrust but be aware of the malice coming in from the false love people may show.',
-			destiny: 'Theft/loss of idea/power or protection of people in the light of impending trouble of opposite forces'
+			destiny: 'Protection of people in the light of impending trouble'
 		},
 		health: {
 			karma: 'Be aware of manipulation and deceit. Try not to build distrust but be aware of the malice coming in from the false love people may show. Try not to be so suspicious or unbelieving that it affects your health but keep an open eye.',
-			destiny: 'Theft/loss of idea/power or protection of ideas/power in the light of impending trouble of opposite forces '
+			destiny: 'Protection of ideas/power in the light of impending trouble'
 		},
 		family: {
 			karma: 'Be aware of manipulation and deceit. Try not to build distrust but be aware of the malice coming in from the false love people may show.',
-			destiny: 'Theft/loss of idea/power or protection of people in the light of impending trouble of opposite forces '
+			destiny: 'Protection of people in the light of impending trouble'
 		}
 	},
 
@@ -497,19 +497,19 @@ export default data = {
         image: require('../assets/images/seven_of_wands.png'),
 		career: {
 			karma: 'Times are testing your strength and determination. You need to stay away from ignorance and fear and tackle the issues head on.',
-			destiny: 'Adversities are presenting an opportunity to prove yourself. Standing ground and controlling overwhelming adverse forces'
+			destiny: 'Adversities are presenting an opportunity to prove yourself.'
 		},
 		love: {
 			karma: 'Times are testing your strength and determination. Stay away from pride and criticism and ignorance of the issues surrounding your life. They will resolve with help of your loved ones and with your own perseverance.',
-			destiny: 'Adversities are presenting an opportunity to prove yourself. Standing ground and controlling overwhelming adverse forces'
+			destiny: 'Adversities are presenting an opportunity to prove yourself.'
 		},
 		health: {
 			karma: 'Times are testing your strength and determination. Stay away from ignorance and fear and tackle the issues head on.',
-			destiny: 'Adversities are presenting an opportunity to prove yourself. Standing ground and controlling overwhelming adverse forces'
+			destiny: 'Adversities are presenting an opportunity to prove yourself.'
 		},
 		family: {
 			karma: 'Times are testing your strength and determination. Stay away from ignorance and fear and tackle the issues head on with help of your loved ones and with your own perseverance.',
-			destiny: 'Adversities are presenting an opportunity to prove yourself. Standing ground and controlling overwhelming adverse forces'
+			destiny: 'Adversities are presenting an opportunity to prove yourself.'
 		}
 	},
 
@@ -517,19 +517,19 @@ export default data = {
         image: require('../assets/images/seven_of_cups.png'),
 		career: {
 			karma: 'Stay away from jealosy, pretense and confusion. Be sure of what you want and need. Seek advice from the one you trust.',
-			destiny: 'Conflict in thoughts and emotions or choices to be made. Mystery, lack of direction. '
+			destiny: 'Conflict in thoughts and emotions. Choices to be made. Mystery, lack of direction. '
 		},
 		love: {
 			karma: 'Stay away from jealosy, pretense and confusion. Be sure of what you want and need. Control the excessive flow of emotions by practicing reason. ',
-			destiny: 'Conflict in thoughts and emotions or choices to be made. Mystery, lack of direction. '
+			destiny: 'Conflict in thoughts and emotions. Choices to be made. Mystery, lack of direction. '
 		},
 		health: {
 			karma: 'Stay away from jealosy, pretense and confusion. Be sure of what you want and need. Keep excessive emotions in check.',
-			destiny: 'Conflict in thoughts and emotions or choices to be made. Mystery, lack of direction. '
+			destiny: 'Conflict in thoughts and emotions. Choices to be made. Mystery, lack of direction. '
 		},
 		family: {
 			karma: 'Stay away from jealosy, pretense and confusion. Be sure of what you want and need. Control the excessive flow of emotions by practicing reason. Do check before misjudging someone.',
-			destiny: 'Conflict in thoughts and emotions or choices to be made. Mystery, lack of direction. '
+			destiny: 'Conflict in thoughts and emotions. Choices to be made. Mystery, lack of direction. '
 		}
 	},
 
@@ -619,15 +619,15 @@ export default data = {
 			destiny: 'Hard work, Descipline, Consistency, Greed, Feeling of effort going in vain and less money for a lot of work.'
 		},
 		love: {
-			karma: 'Love is like a monument. You need to work hard to bring it to shape. Be consistent in your efforts',
+			karma: 'Love is like a monument. You need to work hard to bring it to shape. The times require you to be consistent in your efforts',
 			destiny: 'Hard work, Descipline, Consistency, Greed, Feeling of effort going in vain.'
 		},
 		health: {
-			karma: 'Life is like a monument. You need to work hard to bring it to shape. Be consistent in your efforts',
+			karma: 'Life is like a monument. You need to work hard to bring it to shape. The times require you to be consistent in your efforts',
 			destiny: 'Hard work, Descipline, Consistency, Greed, Feeling of effort going in vain'
 		},
 		family: {
-			karma: 'Family is like a monument. You need to work hard to bring it to shape. Be consistent in your efforts',
+			karma: 'Family is like a monument. You need to work hard to bring it to shape. The times require you to be consistent in your efforts',
 			destiny: 'Hard work, Descipline, Consistency, Greed, Feeling of effort going in vain'
 		}
 	},
@@ -773,7 +773,7 @@ export default data = {
 	ten_of_pentacles: {
         image: require('../assets/images/ten_of_pentacles.png'),
 		career: {
-			karma: 'Enjoy your moments, Calm down and share your experience. Give back to charity and earn good luck for the new task ahead.',
+			karma: 'Enjoy your moments, Calm down and share your experience. Give back to people in need and earn good luck for the new task ahead.',
 			destiny: 'Environment of completion. Things come full circle and bestow satisfaction and comfort.'
 		},
 		love: {
@@ -820,11 +820,11 @@ export default data = {
 			destiny: 'Travel, passion, career move, entering, willingness, energy, curiosity to explore new things.'
 		},
 		health: {
-			karma: 'Be ready and unafraid to make important decisions and bold moves when it comes to your or family health. ',
+			karma: 'Be ready and unafraid to make important decisions and bold moves when it comes to yours and family health. ',
 			destiny: 'Travel, passion, career move, entering, willingness, energy, curiosity to explore new things.'
 		},
 		family: {
-			karma: 'Be ready and unafraid to make important decisions and bold moves when it comes to your or family. Feel energetic and resourceful as you can contribute a lot to the affairs of the family.',
+			karma: 'Be ready and unafraid to make important decisions and bold moves when it comes to you or family. Feel energetic and resourceful as you can contribute a lot to the affairs of the family.',
 			destiny: 'Travel, passion, career move, entering, willingness, energy, curiosity to explore new things. '
 		}
 	},
