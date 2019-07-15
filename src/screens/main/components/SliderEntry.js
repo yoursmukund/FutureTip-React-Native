@@ -26,6 +26,7 @@ class SliderEntry extends Component {
         } else if(savedDate !== (new Date).getDate().toString()){
           //Date has passed, refresh the readings
           AsyncStorage.clear().then(() => {
+            AsyncStorage.setItem('hideWelcomeScreen', 'true');
             this.props.navigation.push('ReadingScreen', {
               readingName: key,
               existingReading: null

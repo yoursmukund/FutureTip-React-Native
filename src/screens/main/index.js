@@ -17,8 +17,8 @@ const SLIDER_1_FIRST_ITEM = 1;
 const slides = [
   {
     key: '1',
-    title: 'Get inspired!',
-    text: 'Daily insights from the ancient wisdom of Tarot to get the best out of your day.',
+    title: 'Be your own fortune teller!',
+    text: 'Own your destiny and arrange your thoughts and actions using our carefully curated ancient tarot knowledge',
     colors: ['#081E40', '#84DEE1'],
     source: require('../../assets/images/futuretip_get_inspired.png')
   },
@@ -155,7 +155,7 @@ export default class MainScreen extends Component {
   }
 
   render() {
-    const carousel = this.renderSlider('Daily Tarot Readings', 'Let the tarot cards guide you daily. We reset the readings every midnight so you can start fresh each day.');
+    const carousel = this.renderSlider('Daily Tarot Readings!', 'Start each day by finding answers to your problems in the cards. We reset the readings every midnight.');
 
     if (this.state.showApp) {
       return (

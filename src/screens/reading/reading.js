@@ -47,7 +47,7 @@ export default class ReadingScreen extends Component {
       }
     }
 
-
+    this.relaxText = "Relax and breathe slowly...\n\n Focus on your problem and when you're ready, pick the card below"
     this.getReading = this.getReading.bind(this);
     this.saveReading = this.saveReading.bind(this);
     this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
@@ -129,7 +129,7 @@ export default class ReadingScreen extends Component {
         <ScrollView
           contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-evenly', alignItems: 'center' }}>
           <View style={styles.wrapper}>
-            {!this.state.readingVisible ? <Text style={styles.relaxText}>Focus, relax and pick the card below</Text> : null}
+            {!this.state.readingVisible ? <Text style={styles.relaxText}>{this.relaxText}</Text> : null}
             {this.state.readingVisible ? <Text style={styles.cardName}>{this.state.cardDetails.cardName.replace(/_/g, " ").toUpperCase()}</Text> : null}
             <FlipCard
               style={styles.flipCard}
@@ -169,10 +169,13 @@ const styles = StyleSheet.create({
     paddingTop: 50,
   },
   relaxText: {
-    paddingTop: Dimensions.get('window').height / 3,
+    paddingTop: Dimensions.get('window').height / 4,
     fontFamily: 'bold',
     color: 'rgba(255, 255, 255, 0.75)',
     fontSize: 20,
-    letterSpacing: 0.5
+    letterSpacing: 0.5,
+    textAlign: 'center',
+    paddingHorizontal: 30,
+    paddingBottom: 10
   }
 });
