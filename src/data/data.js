@@ -22,19 +22,19 @@ export default data = {
 	ace_of_wands: {
         image: require('../assets/images/ace_of_wands.png'),
 		career: {
-			karma: 'Your destiny and desire want you to find something you are passionate about. The inclination is there, the atmosphere is there, the karma is upto you. So go ahead and find that passion and set plans into motion.',
+			karma: 'Your destiny and desire want you to find something you are passionate about. The inclination is there, the atmosphere is there if you look deeper, the karma is upto you. So go ahead and find that passion and set plans into motion.',
 			destiny: 'Inception of a passion, new journey'
 		},
 		love: {
-			karma: 'Your destiny is inclining towards sparking of new passion, renewed interest in love. No atmosphere or situation is complete without your effort. Come up with new energy, acknowledge what the universe wants set plans in motion.',
+			karma: 'Your destiny is inclining towards sparking of new passion, renewed interest in love. No atmosphere or situation is complete without your effort. The universe wants you to look at life from your own unique perspective and recognize the new in it.',
 			destiny: 'Inception of a passion, new journey'
 		},
 		health: {
-			karma: 'The universe is signalling a new start. It needs your support. Bring a new desire to renew your health and life. Find something you are passionate about. Be more inclined and you will see the flow of nature is guiding you to start anew.',
+			karma: 'The universe is signalling a new start. It needs your support. Time is right to bring a new desire to renew your perspective on life. Find something you are passionate about. Be more inclined and you will see the flow of nature is guiding you to start anew.',
 			destiny: 'Inception of a passion, new journey'
 		},
 		family: {
-			karma: 'The universe is signalling a new start. It needs your support. Bring a new desire to renew your relationships. Be more inclined and you will see the flow of nature is guiding you to start anew.',
+			karma: 'The universe is signalling a new start. It needs your support. Time is right to bring a new desire to renew your relationships. Be more inclined and you will see the flow of nature is guiding you to start anew.',
 			destiny: 'Inception of a passion, new journey'
 		}
 	},
@@ -42,58 +42,58 @@ export default data = {
 	ace_of_cups: {
         image: require('../assets/images/ace_of_cups.png'),
 		career: {
-			karma: 'The universe is signalling towards a new love, a renewed interest in everyday things. It needs you to manifest positive energy towards everyone who you work with. Appreciate someone sincerely and be grateful for what you are doing',
+			karma: 'The universe is signalling towards a new love, a renewed interest in everyday things. It needs you to manifest positive energy towards everyone who you work with, even the doubters and naysayers. Appreciate sincerely today and be grateful for your share of blessings',
 			destiny: 'New love becons'
 		},
 		love: {
-			karma: 'The universe is waiting for you to open your eyes and see that you need to see the life from a different, fresh perspective. Take a look around and be grateful for what you have. Renew your interest in love and spread affection to those who are underappreciated',
+			karma: 'The universe is waiting for you to open your eyes and see that you need to see life from a different, fresh perspective. Take a look around and be grateful for what you have. The times signal a renewal in your perspective towards love. Spread affection to those who feel underappreciated',
 			destiny: 'New love becons. Emotions guiding the way more than reason'
 		},
 		health: {
-			karma: 'The universe requires you to look at the benefits of your effort. Nothing is achieved without hard work and constant nourishment of love towards that work. Time to manifest that nourishment',
+			karma: 'The universe signals you to look at the benefits of your efforts in life. Nothing is achieved without hard work and constant nourishment of love towards that work. Time to manifest that nourishment',
 			destiny: 'New love becons. Emotions guiding the way more than reason'
 		},
 		family: {
-			karma: ' Emotions guiding the way more than reason > The universe wants you to sincerely appreciate and find something to be thankful for in the oddest of places. A great time to call up those who you do not usually and re-establish the bonds. Find more positives than negatives.',
-			destiny: 'New love becons'
+			karma: 'The universe wants you to sincerely appreciate and find something to be thankful for in the oddest of places. A great time to call up those who you do not usually and re-establish the bonds. Try to find more positives than negatives.',
+			destiny: 'New love becons. Emotions guiding the way more than reason'
 		}
 	},
 
 	ace_of_pentacles: {
         image: require('../assets/images/ace_of_pentacles.png'),
 		career: {
-			karma: 'The universe allows improvements in all aspects of your existence. Take the opportunity and open your eyes to fruitful ventures and don not shy away from taking risk.',
+			karma: 'The universe is allowing for you to make improvements in all aspects of your existence. Resolution of money matters is imminent. Take the opportunity and open your eyes to fruitful ventures and do not shy away from taking the right risks.',
 			destiny: 'New health, luck and prosperity, solid gains.'
 		},
 		love: {
-			karma: 'The universe allows improvements in all aspects of your existence. Take the opportunity and open your eyes to this new luck and be grateful and invest it on well being.',
+			karma: 'The universe is allowing for you to make improvements in all aspects of your existence. Take the opportunity and open your eyes to this new luck and be grateful and invest it on well being of you and your loved ones.',
 			destiny: 'New health, luck and prosperity, solid gains'
 		},
 		health: {
-			karma: 'The universe allows improvements in all aspects of your existence including health. Take the opportunity and open your eyes to this new luck and be grateful and invest it on well being.',
+			karma: 'The universe is allowing for you to make improvements in all aspects of your existence including health. Take the opportunity and open your eyes to this new luck and be grateful and invest it on well being.',
 			destiny: 'New health, luck and prosperity, solid gains'
 		},
 		family: {
-			karma: 'The universe allows improvements in all aspects of you and your loved ones existence. Take the opportunity and open your eyes to this new luck and be grateful and invest it on well being.',
+			karma: 'The universe is allowing for you to make improvements in all aspects of you and your loved ones existence. Take the opportunity and open your eyes to this new luck and be grateful and invest it on well being.',
 			destiny: 'New health, luck and prosperity, solid gains.'
 		}
 	},
 	two_of_swords: {
         image: require('../assets/images/two_of_swords.png'),
 		career: {
-			karma: 'The surroundings are not very favorable of conclusions and incline more towards opposing ideas and incompletion of targets. Be prepared for delays and keep your eyes open to actions or decisions that may not turn out to be in your favor',
+			karma: 'The surroundings are not very favorable for conclusions and incline more towards opposing ideas and incomplete targets. The state of confusion could cause worries. Be prepared for delays and keep your eyes open to actions or decisions that may not turn out to be in your favor',
 			destiny: 'Duality or warring ideas'
 		},
 		love: {
-			karma: 'The surroundings are not very favorable of conclusions and incline more towards opposing ideas and lack of resolve. Be prepared for delays and keep your eyes open to actions or decisions that may not turn out to be in your favor.',
+			karma: 'The surroundings are not very favorable for conclusions and incline more towards opposing ideas and lack of resolve. The state of confusion could cause worries. Be prepared for delays and keep your eyes open to actions or decisions that may not turn out to be in your favor.',
 			destiny: 'Duality or warring ideas'
 		},
 		health: {
-			karma: 'The surroundings are not very favorable of conclusions and incline more towards opposing ideas and lack of resolve. Be prepared for delays and keep your eyes open to actions or decisions that may not turn out to be in your favor. Follow your instincts and try to keep your mind as free from conflict as possible.',
+			karma: 'The surroundings are not very favorable for conclusions and incline more towards opposing ideas and lack of resolve. Inconclusive actions could be a cause for worry. Be prepared for delays and keep your eyes open to actions or decisions that may not turn out to be in your favor. Follow your instincts and try to keep your mind as free from conflict as possible.',
 			destiny: 'Duality or warring ideas'
 		},
 		family: {
-			karma: 'The inner and outer universe is not very favorable of conclusions and incline more towards opposing ideas and lack of resolve. Be prepared for delays and keep your eyes open to actions or decisions that may not turn out to be in your favor. Follow your instincts and try to keep your mind as free from conflict as possible.',
+			karma: 'The inner and outer universes are not very favorable for conclusions and incline more towards opposing ideas and lack of resolve. Be prepared for delays and keep your eyes open to actions or decisions that may not turn out to be in your favor. Follow your instincts and try to keep your mind as free from conflict as possible.',
 			destiny: 'Duality or warring ideas'
 		}
 	},
@@ -101,19 +101,19 @@ export default data = {
 	two_of_wands: {
         image: require('../assets/images/two_of_wands.png'),
 		career: {
-			karma: 'Both the outer world and your internal world are showing signs of lack of resolve and contentment. Time to leave some decisions behind for later and persue the ones on priority. Know that Rome was not built in a day. In order for you to move forward, you will have to let go of some conflict even if they are not resolved.',
+			karma: 'Both the outer world and your internal world are showing signs of lack of resolve and contentment. Time is right to leave some decisions behind for later and persue the ones on priority. Know that Rome was not built in a day. In order for you to move forward, you will have to let go of some conflict even if they are not resolved.',
 			destiny: 'Struggle of lesser potential, choice between personal world and the beyond'
 		},
 		love: {
-			karma: 'Inner and outer worlds conflict and present questions. You dont have to resolve all the conflicts today, only the ones that affect normal wellbeing. Prioritize your issues. Do not fret on things you cannot control.',
+			karma: 'Inner and outer worlds conflict and present questions. You dont have to resolve all the conflicts today, only the ones that affect normal wellbeing. Prioritize your issues. Do not fret on things you cannot control. This way your field of vision will be clearer and your thoughts will untangle',
 			destiny: 'Struggle of lesser potential, choice between personal world and the beyond'
 		},
 		health: {
-			karma: 'Health issues may present themselves, even in the form of small choices and conflicts. Resolution may not be around the corner but be patient and make better choices when it comes to your life.',
+			karma: 'Inner and outer worlds conflict and present questions. You dont have to resolve all the conflicts today, only the ones that affect normal wellbeing. Prioritize your issues. Do not fret on things you cannot control. This way your field of vision will be clearer and your thoughts will untangle.',
 			destiny: 'Struggle of lesser potential, choice between personal world and the beyond'
 		},
 		family: {
-			karma: 'Conflicting ideas and arguments may present themselves. The solution may not be very easily achieved as these things affect your inner desires and motivations. Be calm and put in peaceful considerations. Inner conflict and opposing thoughts may also manifest. Have a mindset to be on the solution side of things. This intent will help dissolve all conflicts.',
+			karma: 'Conflicting ideas and arguments surround you. The solution may not be very easily achieved as these things affect your inner desires and motivations. Be calm and give them peaceful consideration. Have a mindset to be on the solution side of things. This intent will help dissolve those conflicts.',
 			destiny: 'Struggle of lesser potential, choice between personal world and the beyond'
 		}
 	},
@@ -122,26 +122,26 @@ export default data = {
         image: require('../assets/images/two_of_cups.png'),
 		career: {
 			karma: 'Good time to make new friends and keep up with the old ones. You never know which one might help you out when it comes to inspiration or opportunity. Take some time out to keep in touch.',
-			destiny: 'Unexpected meeting, friends/people coming together for exchange of ideas, opportunity and direction.'
+			destiny: 'Unexpected meeting, people coming together for exchange of ideas, opportunity and direction.'
 		},
 		love: {
-			karma: 'The possibility of renewal of an old relationship or inception of a new one are high. Keep your mind and heart open to it.',
+			karma: 'The possibility of renewal of an old relationship or inception of a new one is high. Keep your mind and heart open to it. A good time for expression of emotions',
 			destiny: 'Unexpected meeting, people coming together for exchange of emotions, opportunity and direction.'
 		},
 		health: {
 			karma: 'Good time to make new friends and keep up with the old ones. You never know which one might help you out when it comes to inspiration or opportunity. Take some time out to keep in touch.',
-			destiny: 'Unexpected meeting, friends/people coming together for exchange of ideas, opportunity and direction.'
+			destiny: 'Unexpected meeting, people coming together for exchange of ideas, opportunity and direction.'
 		},
 		family: {
 			karma: 'Good time to keep up with the family members. Take some time out to keep in touch. Welcome someone who reaches out to you and reach out to people you have not been able to catch up with. There is power in company.',
-			destiny: 'Unexpected meeting, friends/family coming together for exchange of ideas, opportunity and direction'
+			destiny: 'Unexpected meeting, people coming together for exchange of ideas, opportunity and direction'
 		}
 	},
 
 	two_of_pentacles: {
         image: require('../assets/images/two_of_pentacles.png'),
 		career: {
-			karma: 'In these turbulent times, be patient and stoic. Divide the work to conquor it. Try not to waste your time contemplating without conclusion.',
+			karma: 'In these busy times, be patient and stoic. Divide the work to conquor it. Try not to waste your time contemplating without conclusion.',
 			destiny: 'Juggling finances, health, a very physical life'
 		},
 		love: {
