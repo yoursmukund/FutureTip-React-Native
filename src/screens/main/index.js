@@ -148,14 +148,16 @@ export default class MainScreen extends Component {
         SplashScreen.hide();
       } else if (hideWelcomeScreen === 'true') {
         this.setState({ showApp: true }, () => {
-          SplashScreen.hide();
+          setTimeout(() => {
+            SplashScreen.hide();
+          }), 2000
         });
       }
     });
   }
 
   render() {
-    const carousel = this.renderSlider('Daily Tarot Readings!', 'Start each day by finding answers to your problems in the cards. We reset the readings every midnight.');
+    const carousel = this.renderSlider('Be your own fortuneteller!', 'Own your destiny and karma. Start each day by finding answers to your problems in the cards. We reset the readings every midnight.');
 
     if (this.state.showApp) {
       return (
