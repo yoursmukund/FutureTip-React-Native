@@ -1,4 +1,4 @@
-package com.awesomeproject;
+package com.futureTip;
 
 import android.app.Application;
 
