@@ -38,6 +38,7 @@ export default class ReadingView extends Component {
 const styles = StyleSheet.create({
 
   titles: {
+    marginTop: 25,
     fontFamily: 'bold',
     color: 'rgba(255, 255, 255, 0.75)',
     fontSize: 22,
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   subtitles: {
-    paddingTop: 5,
+    marginTop: 5,
     fontFamily: 'light',
     color: 'rgba(255, 255, 255, 0.75)',
     fontSize: 13,
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
   },
   readingText: {
     fontFamily: 'light',
-    paddingTop: 20,
+    marginTop: 15,
     color: 'rgba(255, 255, 255, 0.75)',
     fontSize: 17,
     textAlign: 'center',
@@ -65,7 +66,9 @@ const styles = StyleSheet.create({
   wrapper: {
     justifyContent: 'space-evenly',
     alignItems: 'center',
-    height: Dimensions.get('window').height / 1.5,
+    flex: 1,
+    marginTop: 20,
+    marginBottom: 30
   },
   lineStyle: {
     borderWidth: 0.5,
