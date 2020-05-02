@@ -177,7 +177,7 @@ export default class MainScreen extends Component {
             {carousel}
             <AdMobBanner
               adSize="fullBanner"
-              adUnitID="ca-app-pub-3940256099942544/6300978111"
+              adUnitID="ca-app-pub-9254279951945004/9695035235"
             />
           </ScrollView>
         </View>

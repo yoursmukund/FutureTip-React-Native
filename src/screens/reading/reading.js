@@ -47,7 +47,7 @@ export default class ReadingScreen extends Component {
       }
     }
 
-    this.relaxText = "Relax and breathe slowly...\n\n Focus on your problem and when you're ready, pick the card below"
+    this.relaxText = "Relax...\n\n Focus on your problem and when you're ready, pick the card below"
     this.getReading = this.getReading.bind(this);
     this.saveReading = this.saveReading.bind(this);
     this.handleBackButtonClick = this.handleBackButtonClick.bind(this);
@@ -64,7 +64,7 @@ export default class ReadingScreen extends Component {
 
   handleBackButtonClick() {
     // Display an interstitial
-    AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/1033173712');
+    AdMobInterstitial.setAdUnitID('ca-app-pub-9254279951945004/5914815125');
     AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
 
     //Go back
@@ -127,7 +127,7 @@ export default class ReadingScreen extends Component {
         />
         {this.gradient}
         <ScrollView
-          contentContainerStyle={{ flexGrow: 1, justifyContent: 'space-evenly', alignItems: 'center' }}>
+          contentContainerStyle={{ justifyContent: 'space-evenly', alignItems: 'center' }}>
           <View style={styles.wrapper}>
             {!this.state.readingVisible ? <Text style={styles.relaxText}>{this.relaxText}</Text> : null}
             {this.state.readingVisible ? <Text style={styles.cardName}>{this.state.cardDetails.cardName.replace(/_/g, " ").toUpperCase()}</Text> : null}
@@ -142,8 +142,8 @@ export default class ReadingScreen extends Component {
               <CardImage back={true} state={this.state} />
               <CardImage back={false} state={this.state} />
             </FlipCard>
-          </View>
           {this.state.readingVisible ? <ReadingView cardDetails={this.state.cardDetails} /> : null}
+          </View>
         </ScrollView>
       </View>
     );
@@ -152,8 +152,6 @@ export default class ReadingScreen extends Component {
 
 const styles = StyleSheet.create({
   wrapper: {
-    flex: 1,
-    height: Dimensions.get('window').height / 3,
     justifyContent: 'space-evenly',
     alignItems: 'center'
   },
