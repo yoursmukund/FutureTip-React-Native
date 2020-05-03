@@ -128,7 +128,7 @@ export default class ReadingScreen extends Component {
         {this.gradient}
         <ScrollView
           contentContainerStyle={{ justifyContent: 'space-evenly', alignItems: 'center' }}>
-          <View style={styles.wrapper}>
+          <View style={this.state.readingVisible ? styles.wrapperWithReadingView : styles.wrapper}>
             {!this.state.readingVisible ? <Text style={styles.relaxText}>{this.relaxText}</Text> : null}
             {this.state.readingVisible ? <Text style={styles.cardName}>{this.state.cardDetails.cardName.replace(/_/g, " ").toUpperCase()}</Text> : null}
             <FlipCard
@@ -157,6 +157,11 @@ const styles = StyleSheet.create({
   },
   flipCard: {
     paddingTop: 20,
+  },
+  wrapperWithReadingView: {
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    marginTop: 30
   },
   cardName: {
     fontFamily: 'regular',
