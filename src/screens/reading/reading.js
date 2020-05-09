@@ -64,7 +64,7 @@ export default class ReadingScreen extends Component {
 
   handleBackButtonClick() {
     // Display an interstitial
-    AdMobInterstitial.setAdUnitID('ca-app-pub-9254279951945004/5914815125');
+    AdMobInterstitial.setAdUnitID('ca-app-pub-3404907343922680/7286595630');
     AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd());
 
     //Go back

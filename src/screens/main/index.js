@@ -175,10 +175,12 @@ export default class MainScreen extends Component {
             directionalLockEnabled={true}
           >
             {carousel}
-            <AdMobBanner
-              adSize="fullBanner"
-              adUnitID="ca-app-pub-9254279951945004/9695035235"
-            />
+            <View style={styles.bannerContainer}>
+              <AdMobBanner
+                adSize="fullBanner"
+                adUnitID="ca-app-pub-3404907343922680/2964207247"
+              />
+            </View>
           </ScrollView>
         </View>
       );

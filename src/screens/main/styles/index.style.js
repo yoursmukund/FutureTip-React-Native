@@ -8,6 +8,10 @@ export const colors = {
 };
 
 export default StyleSheet.create({
+    bannerContainer: {
+        height: 60,
+        width: '100%'
+    },
     container: {
         flex: 1,
         backgroundColor: colors.background1,
